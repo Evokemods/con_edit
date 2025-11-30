@@ -1,0 +1,389 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Spawn Lights At.Spawn Lights At.GasStation.GasStation",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Lights At.Spawn Lights At.Supermarket.Supermarket",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Lights At.Spawn Lights At.MiningOutpost.MiningOutpost",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Lights At.Spawn Lights At.Airfield.Airfield",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Lights At.Spawn Lights At.UseLightSwitch.UseLightSwitch",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Puzzle At.Spawn Puzzle At.Junkyard.Junkyard",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Puzzle At.Spawn Puzzle At.Supermarket.Supermarket",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Puzzle At.Spawn Puzzle At.Dome.Dome",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Puzzle At.Spawn Puzzle At.GasStation.GasStation",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn BigWheel at.Spawn BigWheel at.Outpost.Outpost",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.SpawnAddons.SpawnAddons",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_gasstation.recycler_gasstation.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_supermarket.recycler_supermarket.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_supermarket.recycler_supermarket.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_supermarket.recycler_supermarket.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_supermarket.recycler_supermarket.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_supermarket.recycler_supermarket.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_miningoutpost.recycler_miningoutpost.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.recycler_airfield.recycler_airfield.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_gasstation.repairbench_gasstation.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.repairbench_supermarket.repairbench_supermarket.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_gasstation.carlift_gasstation.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.MonumentName.MonumentName",
+      "description": "Monument configuration",
+      "tooltip": "Settings for monuments (dome, airfield, etc.).\nCan control spawn rates, loot, and other monument features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.prefab.prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.pos.pos.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.pos.pos.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.pos.pos.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Addons At.Spawn Addons At.itemAddon.itemAddon.carlift_supermarket.carlift_supermarket.rotate.rotate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Spawn Building At.Spawn Building At.SpawnBuildings.SpawnBuildings",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

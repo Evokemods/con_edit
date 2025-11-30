@@ -1,0 +1,539 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Chat Command List.Chat Command List",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Chat Command List.Chat Command List[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Chat Command List.Chat Command List[0]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Chat Command List.Chat Command List[0]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Chat Command List.Chat Command List[0]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[0]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[0]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[0]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[1]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[1]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[1]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[1]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[2]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[2]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[2]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[2]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[3]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[3]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[3]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[3]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[4]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[4]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[4]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[4]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[5]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[5]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[5]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[5]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[6]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[6]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[6]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[6]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[7]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[7]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[7]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[7]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[8]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[8]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[8]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[8]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[9]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[9]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[9]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[9]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[10]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[10]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[10]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[10]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[11]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[11]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[11]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Console Command List.Console Command List[11]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands[0]..Command Type ( Chat, Console ).Command Type ( Chat, Console )",
+      "description": "Chat, Console",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands[0]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands[0]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[0]..Commands.Commands[0]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands[0]..Command Type ( Chat, Console ).Command Type ( Chat, Console )",
+      "description": "Chat, Console",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands[0]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands[0]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[1]..Commands.Commands[0]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[0]..Command Type ( Chat, Console ).Command Type ( Chat, Console )",
+      "description": "Chat, Console",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[0]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[0]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[0]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[1]..Command Type ( Chat, Console ).Command Type ( Chat, Console )",
+      "description": "Chat, Console",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[1]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[1]..Command.Command",
+      "description": "Chat command to open admin menu",
+      "tooltip": "The command players/admins type to open the menu.\nCan be a single command or array of commands.\n\nExamples: admin, am, menu",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[1]..CloseOnRun.CloseOnRun",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Player Info Custom Commands.Player Info Custom Commands[2]..Commands.Commands[1]..RequiredPermission.RequiredPermission",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use different permissions for each section of the player administration tab.Use different permissions for each section of the player administration tab",
+      "description": "Permission required to use admin menu",
+      "tooltip": "Oxide permission that players need to access the admin menu.\nExample: \"adminmenu.use\"\n\nExamples: adminmenu.use, admin.use",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Log menu actions to Discord webhook (webhook URL).Log menu actions to Discord webhook (webhook URL)",
+      "description": "webhook URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Recent players purge time (days).Recent players purge time (days)",
+      "description": "days",
+      "tooltip": "days",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use alternate UI style.Use alternate UI style",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

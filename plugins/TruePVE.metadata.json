@@ -1,0 +1,605 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Config Version.Config Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Armor damage (PVE).Armor damage (PVE)",
+      "description": "PVE",
+      "tooltip": "Controls player vs player combat.\nTruePVE typically disables PvP in certain areas or times.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Armor damage (PVE).Armor damage (PVE).Skin IDs which are immune to damage.Skin IDs which are immune to damage",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Armor damage (PVE).Armor damage (PVE).Enable support for npcs to cause armor damage on hit.Enable support for npcs to cause armor damage on hit",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Armor damage (PVE).Armor damage (PVE).Play headshot sound when a player is headshot by an npc.Play headshot sound when a player is headshot by an npc",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Auto lock (codelock, keylock, nothing).Auto lock (codelock, keylock, nothing)",
+      "description": "codelock, keylock, nothing",
+      "tooltip": "codelock, keylock, nothing",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Enable support to allow adding locks to various containers.Enable support to allow adding locks to various containers",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Enable codelock anti-raiding (team/clan/friend access only).Enable codelock anti-raiding (team/clan/friend access only)",
+      "description": "team/clan/friend access only",
+      "tooltip": "team/clan/friend access only",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Protect unlocked TC from being accessed by enemy players.Protect unlocked TC from being accessed by enemy players",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Prevent player shield from dropping on death.Prevent player shield from dropping on death",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Prevent player active item from dropping on death.Prevent player active item from dropping on death",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Prevent player backpack from dropping on death (Rust backpack).Prevent player backpack from dropping on death (Rust backpack)",
+      "description": "Rust backpack",
+      "tooltip": "Rust backpack",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Loot.Loot.Prevent players from using enemy car lifts.Prevent players from using enemy car lifts",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%)",
+      "description": "0 = disabled, 1 = 100%",
+      "tooltip": "Controls player vs player combat.\nTruePVE typically disables PvP in certain areas or times.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Multiplier Allows Armor Protection.Multiplier Allows Armor Protection",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Arrow Damage.Arrow Damage",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Blunt Damage.Blunt Damage",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Bullet Damage.Bullet Damage",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Slash Damage.Slash Damage",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Reflect PVP Damage Multipliers (0 = disabled, 1 = 100%).Stab Damage.Stab Damage",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG)",
+      "description": "FLAG",
+      "tooltip": "FLAG",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Apply To Twig (when TwigDamage flag is not set.Apply To Twig (when TwigDamage flag is not set",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Apply To Wood.Apply To Wood",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Apply To Stone.Apply To Stone",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Apply To Metal.Apply To Metal",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Apply To HQM.Apply To HQM",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Require Owner Online.Require Owner Online",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Log Offenses.Log Offenses",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Notify Offenders.Notify Offenders",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Reflect Damage Multiplier.Reflect Damage Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.TwigDamage (FLAG).TwigDamage (FLAG).Multiplier Allows Armor Protection.Multiplier Allows Armor Protection",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.handleDamage.handleDamage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.useZones.useZones",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Trace To Player Console.Trace To Player Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Trace To Server Console.Trace To Server Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Log Trace To File.Log Trace To File",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Maximum Distance From Player To Trace.Maximum Distance From Player To Trace",
+      "description": "Numeric value",
+      "tooltip": "Numeric value",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Prevent Water From Extinguishing BaseOven.Prevent Water From Extinguishing BaseOven",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Prevent Players From Being Marked Hostile.Prevent Players From Being Marked Hostile",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow PVP Below Height.Allow PVP Below Height",
+      "description": "PvP/PvE mode settings",
+      "tooltip": "Controls player vs player combat.\nTruePVE typically disables PvP in certain areas or times.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow PVP Above Height.Allow PVP Above Height",
+      "description": "PvP/PvE mode settings",
+      "tooltip": "Controls player vs player combat.\nTruePVE typically disables PvP in certain areas or times.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow Other Damage Below Height.Allow Other Damage Below Height",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow Other Damage Above Height.Allow Other Damage Above Height",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow Cold Metabolism Damage.Allow Cold Metabolism Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow Heat Metabolism Damage.Allow Heat Metabolism Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Configuration Options.Configuration Options.Allow Thirst And Hunger Damage To Farmable Animals.Allow Thirst And Hunger Damage To Farmable Animals",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Schedule.Schedule.enabled.enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Schedule.Schedule.useRealtime.useRealtime",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Schedule.Schedule.broadcast.broadcast",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.RuleSets.RuleSets[0]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.RuleSets.RuleSets[0]..enabled.enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.RuleSets.RuleSets[0]..defaultAllowDamage.defaultAllowDamage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups",
+      "description": "Permission groups",
+      "tooltip": "List of permission groups that have access or are affected. Groups are defined in Oxide/ServerRewards. Example: [\"vip\", \"premium\"]\n\nExamples: [\"vip\"], [\"vip\", \"premium\"], []",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[0]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[1]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[2]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[3]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[4]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[5]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[6]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[7]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[8]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[9]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[10]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[11]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[12]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[13]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[14]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[15]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[16]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[17]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[18]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[19]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[20]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[21]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[22]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Entity Groups.Entity Groups[23]..name.name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Killing Sleepers.Allow Killing Sleepers",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Killing Sleepers (Ally Only).Allow Killing Sleepers (Ally Only)",
+      "description": "Ally Only",
+      "tooltip": "Ally Only",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Killing Sleepers (Authorization Only).Allow Killing Sleepers (Authorization Only)",
+      "description": "Authorization Only",
+      "tooltip": "Authorization Only",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Killing Sleepers (After X Hours Offline).Allow Killing Sleepers (After X Hours Offline)",
+      "description": "After X Hours Offline",
+      "tooltip": "After X Hours Offline",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Killing Sleepers (Allowed steam ids).Allow Killing Sleepers (Allowed steam ids)",
+      "description": "Allowed steam ids",
+      "tooltip": "Allowed steam ids",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Ignore Firework Damage.Ignore Firework Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Ignore Campfire Damage.Ignore Campfire Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Ignore Ladder Damage.Ignore Ladder Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Ignore Sleeping Bag Damage.Ignore Sleeping Bag Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Players Can Trigger Traps In Monument Topology.Players Can Trigger Traps In Monument Topology",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Players Can Hurt Traps In Monument Topology.Players Can Hurt Traps In Monument Topology",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Players Can Trigger Turrets In Monument Topology.Players Can Trigger Turrets In Monument Topology",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Players Can Hurt Turrets In Monument Topology.Players Can Hurt Turrets In Monument Topology",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Scrap Heli Damage.Block Scrap Heli Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Igniter Damage.Block Igniter Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Wallpaper Damage.Block Wallpaper Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Radioactive Water Damage.Block Radioactive Water Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Decay Damage To Vehicles.Block Decay Damage To Vehicles",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block Spray Can In Safe Zones.Block Spray Can In Safe Zones",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Prevent heli from strafing in the inner radius of safe zones.Prevent heli from strafing in the inner radius of safe zones",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Prevent players from throwing water in arctic and tundra biome.Prevent players from throwing water in arctic and tundra biome",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Prevent ragdolling when struck by another vehicle.Prevent ragdolling when struck by another vehicle",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Experimental ZoneManager support for PVE zones.Experimental ZoneManager support for PVE zones",
+      "description": "PvP/PvE mode settings",
+      "tooltip": "Controls player vs player combat.\nTruePVE typically disables PvP in certain areas or times.\n\nExamples: true, false",
+      "confidence": 0.8
+    }
+  ]
+}

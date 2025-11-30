@@ -1,0 +1,227 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Team Setting Command.Team Setting Command",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable auto teamleader switch(If current teamleader go offline, next player from online automaticcaly set to teamleader. Teamleader get his leader role after join online).Enable auto teamleader switch(If current teamleader go offline, next player from online automaticcaly set to teamleader. Teamleader get his leader role after join online)",
+      "description": "If current teamleader go offline, next player from online automaticcaly set to teamleader. Teamleader get his leader role after join online",
+      "tooltip": "If current teamleader go offline, next player from online automaticcaly set to teamleader. Teamleader get his leader role after join online",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable Tip for Open Team Hud.Enable Tip for Open Team Hud",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable Team Fix(Will fix teams if your server is crashed).Enable Team Fix(Will fix teams if your server is crashed)",
+      "description": "Will fix teams if your server is crashed",
+      "tooltip": "Will fix teams if your server is crashed",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable clan tag removing from Team Hud(Work only if has Clans plugin).Enable clan tag removing from Team Hud(Work only if has Clans plugin)",
+      "description": "Work only if has Clans plugin",
+      "tooltip": "Work only if has Clans plugin",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable Team Hud.Enable Team Hud",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable global team voice chat.Enable global team voice chat",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team skins.Enable team skins",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable players grid position.Enable players grid position",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable easy team markers.Enable easy team markers",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team auto authorization.Enable team auto authorization",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team auto authorization.Enable team auto authorization.TC Authorization.TC Authorization",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team auto authorization.Enable team auto authorization.Codelocks authorization.Codelocks authorization",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team auto authorization.Enable team auto authorization.AutoTurrets authorization.AutoTurrets authorization",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Enable team auto authorization.Enable team auto authorization.SAMSite authorization.SAMSite authorization",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Easy team markers.Easy team markers.Max distance.Max distance",
+      "description": "Numeric value",
+      "tooltip": "Numeric value",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Easy team markers.Easy team markers.Search radius.Search radius",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Easy team markers.Easy team markers.Duration [seconds].Duration [seconds]",
+      "description": "seconds",
+      "tooltip": "seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enabled functions.Enabled functions.Easy team markers.Easy team markers.Cooldown [seconds].Cooldown [seconds]",
+      "description": "seconds",
+      "tooltip": "seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions",
+      "description": "List of permission nodes",
+      "tooltip": "Array of permission node strings. Each permission controls access to specific features.\n\nExamples: pluginname.use, pluginname.admin",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Need permission for Team Hud?(true - will work only for players with permission / false - work for all players).Need permission for Team Hud?(true - will work only for players with permission / false - work for all players)",
+      "description": "true - will work only for players with permission / false - work for all players",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Need permission for Team Voice?(true - will work only for players with permission / false - work for all players).Need permission for Team Voice?(true - will work only for players with permission / false - work for all players)",
+      "description": "true - will work only for players with permission / false - work for all players",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Need permission for Team Skins?(Need at least one player with this permission in team to set skins in menu)(true - will work only for players with permission / false - work for all players).Need permission for Team Skins?(Need at least one player with this permission in team to set skins in menu)(true - will work only for players with permission / false - work for all players)",
+      "description": "Need at least one player with this permission in team to set skins in menu)(true - will work only for players with permission / false - work for all players",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Need permission for Team marker?(true - will work only for players with permission / false - work for all players).Need permission for Team marker?(true - will work only for players with permission / false - work for all players)",
+      "description": "true - will work only for players with permission / false - work for all players",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Team hud using permission.Team hud using permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Team Voice using permission.Team Voice using permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Team Skins using permission(only for setting skins. it's mean that only team leader will need this permission).Team Skins using permission(only for setting skins. it's mean that only team leader will need this permission)",
+      "description": "only for setting skins. it's mean that only team leader will need this permission",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permissions.Permissions.Team marker using permission.Team marker using permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.UI Scale.UI Scale",
+      "description": "UI scale multiplier",
+      "tooltip": "Multiplier for UI element size. • 1.0 = normal size (100%)\n• 2.0 = double size (200%)\n• 0.5 = half size (50%)\n\nAffects all UI elements proportionally.\n\nExamples: 0.5, 1.0, 1.5, 2.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Left Offset.Left Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Top Offset.Top Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Player grid refresh rate.Player grid refresh rate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Lines margin.Lines margin",
+      "description": "Spacing between UI elements",
+      "tooltip": "Space in pixels between UI elements or around content. Larger margins = more spacing. Used for card spacing, button gaps, etc.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Collums margin.Collums margin",
+      "description": "Spacing between UI elements",
+      "tooltip": "Space in pixels between UI elements or around content. Larger margins = more spacing. Used for card spacing, button gaps, etc.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Hud Settings.Hud Settings.Max amount of player displays in line.Max amount of player displays in line",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Skin List (Item Id - List of available skins).Skin List (Item Id - List of available skins)",
+      "description": "Item Id - List of available skins",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    }
+  ]
+}

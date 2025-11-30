@@ -1,0 +1,65 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Avatars - Store player avatars.Avatars - Store player avatars",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Steam API key (get one here https://steamcommunity.com/dev/apikey).Steam API key (get one here https://steamcommunity.com/dev/apikey)",
+      "description": "get one here https://steamcommunity.com/dev/apikey",
+      "tooltip": "get one here https://steamcommunity.com/dev/apikey",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.URL to web folder containing all item icons.URL to web folder containing all item icons",
+      "description": "Image URL or key",
+      "tooltip": "URL to an image file or a key reference to a stored image.\nImages are cached for performance.\n\nExamples: https://example.com/image.png, myimagekey",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Progress - Show download progress in console.Progress - Show download progress in console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Progress - Time between update notifications.Progress - Time between update notifications",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.User Images - Manually define images to be loaded.User Images - Manually define images to be loaded",
+      "description": "Image URL or key",
+      "tooltip": "URL to an image file or a key reference to a stored image.\nImages are cached for performance.\n\nExamples: https://example.com/image.png, myimagekey",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

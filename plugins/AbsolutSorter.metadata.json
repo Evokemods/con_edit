@@ -1,0 +1,131 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Allowed containers (short prefab name).Allowed containers (short prefab name)",
+      "description": "short prefab name",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items to block from any sorting function (item shortname).Items to block from any sorting function (item shortname)",
+      "description": "item shortname",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Skins to block from any sorting function.Skins to block from any sorting function",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Sorting radius.Sorting radius",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Include hotbar items when sorting.Include hotbar items when sorting",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Require building privilege to use sorting.Require building privilege to use sorting",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Help notification interval (seconds, set to 0 to disable).Help notification interval (seconds, set to 0 to disable)",
+      "description": "seconds, set to 0 to disable",
+      "tooltip": "seconds, set to 0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Disable sorting functionality if raid blocked.Disable sorting functionality if raid blocked",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use permission to allow nearby sorting.Use permission to allow nearby sorting",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Valid nearby sorting options.Valid nearby sorting options",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Valid nearby sorting options.Valid nearby sorting options.Only nearby sort into friendly containers.Only nearby sort into friendly containers",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Valid nearby sorting options.Valid nearby sorting options.Allow sort into clan members containers.Allow sort into clan members containers",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Valid nearby sorting options.Valid nearby sorting options.Allow sort into friends containers.Allow sort into friends containers",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Valid nearby sorting options.Valid nearby sorting options.Allow sort into team member containers.Allow sort into team member containers",
+      "description": "Sorting rules and priorities",
+      "tooltip": "Defines how items are sorted in containers.\nCan sort by type, name, value, etc.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Offset.UI Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Offset.UI Offset.Horizontal.Horizontal",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Offset.UI Offset.Vertical.Vertical",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

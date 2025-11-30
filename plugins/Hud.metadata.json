@@ -1,0 +1,863 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Auto reload [If you change the config and save the file the plugin will reload itself].Auto reload [If you change the config and save the file the plugin will reload itself]",
+      "description": "If you change the config and save the file the plugin will reload itself",
+      "tooltip": "If enabled, the plugin automatically reloads when you save the config file.\nUseful for testing changes without restarting the server.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Other images.Other images",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Overall layer [you will see the hud in your inventory].Overall layer [you will see the hud in your inventory]",
+      "description": "you will see the hud in your inventory",
+      "tooltip": "If true, the HUD will be visible in your inventory screen.\nIf false, it only shows in-game.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Show only active events.Show only active events",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Size ALL [0% - inf].Size ALL [0% - inf]",
+      "description": "0% - inf",
+      "tooltip": "Controls the overall size of the HUD elements.\n• 100 = 100% (normal size)\n• 50 = 50% (half size)\n• 200 = 200% (double size)\n\nUse this to scale the entire HUD interface.\n\nExamples: 85, 100, 150",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Logo [HUD interact button].Logo [HUD interact button]",
+      "description": "HUD interact button",
+      "tooltip": "HUD interact button",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Background opacity [0% - 100%].Background opacity [0% - 100%]",
+      "description": "0% - 100%",
+      "tooltip": "Controls how transparent the background is.\n• 0 = Fully transparent (invisible)\n• 100 = Fully opaque (solid)\n• 85 = Slightly transparent (recommended)\n\nExamples: 60, 85, 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Events background opacity [0% - 100%].Events background opacity [0% - 100%]",
+      "description": "0% - 100%",
+      "tooltip": "Controls how transparent the background is.\n• 0 = Fully transparent (invisible)\n• 100 = Fully opaque (solid)\n• 85 = Slightly transparent (recommended)\n\nExamples: 60, 85, 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Position.Position",
+      "description": "HUD position on screen",
+      "tooltip": "Where the HUD appears on screen:\n• \"TopLeft\" - Top-left corner\n• \"TopRight\" - Top-right corner\n• \"BottomLeft\" - Bottom-left corner\n• \"BottomRight\" - Bottom-right corner\n\nExamples: TopLeft, TopRight, BottomLeft, BottomRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Position.Position.Align [TopLeft | TopRight | BottomLeft | BottomRight.Align [TopLeft | TopRight | BottomLeft | BottomRight",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Position.Position.Left | Right - offset.Left | Right - offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Position.Position.Top | Bottom - offset.Top | Bottom - offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Server name.Server name",
+      "description": "Server name displayed in HUD",
+      "tooltip": "The server name shown in the HUD interface.\nThis is what players see in the HUD display.\n\nExamples: Rustier PvE, My Server, Rust Server",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Active players.Active players",
+      "description": "Show active player count",
+      "tooltip": "Displays the number of players currently online.\nCan optionally include or exclude admins from the count.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Active players.Active players.Count admins.Count admins",
+      "description": "Show active player count",
+      "tooltip": "Displays the number of players currently online.\nCan optionally include or exclude admins from the count.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Active players.Active players.Icon.Icon",
+      "description": "Show active player count",
+      "tooltip": "Displays the number of players currently online.\nCan optionally include or exclude admins from the count.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Active players.Active players.Color.Color",
+      "description": "Show active player count",
+      "tooltip": "Displays the number of players currently online.\nCan optionally include or exclude admins from the count.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Active players.Active players.Enable.Enable",
+      "description": "Show active player count",
+      "tooltip": "Displays the number of players currently online.\nCan optionally include or exclude admins from the count.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Sleep players.Sleep players.Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Sleep players.Sleep players.Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Sleep players.Sleep players.Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Queue players.Queue players.Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Queue players.Queue players.Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Queue players.Queue players.Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Time.Time.Use automatic detection of the time format for each player.Use automatic detection of the time format for each player",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Time.Time.Use AM/PM format [If you use this turn off automatic detection].Use AM/PM format [If you use this turn off automatic detection]",
+      "description": "If you use this turn off automatic detection",
+      "tooltip": "If you use this turn off automatic detection",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Time.Time.Value color.Value color",
+      "description": "Effect or modifier value",
+      "tooltip": "A numeric value representing an effect, multiplier, or modifier. Meaning depends on context (skill effect, price modifier, etc.). Can be percentage, multiplier, or absolute value.\n\nExamples: 1.0, 10.0, 100.0, 200.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Time.Time.Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Player position [hide permisson - hud.streamer].Player position [hide permisson - hud.streamer]",
+      "description": "hide permisson - hud.streamer",
+      "tooltip": "Where the HUD appears on screen:\n• \"TopLeft\" - Top-left corner\n• \"TopRight\" - Top-right corner\n• \"BottomLeft\" - Bottom-left corner\n• \"BottomRight\" - Bottom-right corner\n\nExamples: TopLeft, TopRight, BottomLeft, BottomRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Player position [hide permisson - hud.streamer].Player position [hide permisson - hud.streamer].Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Player position [hide permisson - hud.streamer].Player position [hide permisson - hud.streamer].true - grid | false - x,z coordinates.true - grid | false - x,z coordinates",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Player position [hide permisson - hud.streamer].Player position [hide permisson - hud.streamer].Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Economy plugin [Economics | ServerRewards].Economy plugin [Economics | ServerRewards]",
+      "description": "Allowed values: Economics, ServerRewards",
+      "tooltip": "Allowed values: Economics, ServerRewards",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Economy plugin [Economics | ServerRewards].Economy plugin [Economics | ServerRewards].Value color.Value color",
+      "description": "Effect or modifier value",
+      "tooltip": "A numeric value representing an effect, multiplier, or modifier. Meaning depends on context (skill effect, price modifier, etc.). Can be percentage, multiplier, or absolute value.\n\nExamples: 1.0, 10.0, 100.0, 200.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Economy plugin [Economics | ServerRewards].Economy plugin [Economics | ServerRewards].Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Economy plugin [Economics | ServerRewards].Economy plugin [Economics | ServerRewards].Which plugin use [ServerRewards | Economics].Which plugin use [ServerRewards | Economics]",
+      "description": "Allowed values: ServerRewards, Economics",
+      "tooltip": "Allowed values: ServerRewards, Economics",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Update interval [in seconds].Update interval [in seconds]",
+      "description": "in seconds",
+      "tooltip": "in seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Align [BottomCenter | TopCenter | TopRight].Align [BottomCenter | TopCenter | TopRight]",
+      "description": "Allowed values: BottomCenter, TopCenter, TopRight",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Width [in px].Width [in px]",
+      "description": "in px",
+      "tooltip": "in px",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Offset [top | bottom].Offset [top | bottom]",
+      "description": "Allowed values: top, bottom",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Offset [Center].Offset [Center]",
+      "description": "Center",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Use Outline.Use Outline",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Outline color.Outline color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Overall [you will see messages in your invenotory].Overall [you will see messages in your invenotory]",
+      "description": "you will see messages in your invenotory",
+      "tooltip": "you will see messages in your invenotory",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Info messages.Info messages.Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Auto close timer [seconds | 0 - disable].Auto close timer [seconds | 0 - disable]",
+      "description": "Allowed values: seconds, 0 - disable",
+      "tooltip": "Allowed values: seconds, 0 - disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Auto close after command use.Auto close after command use",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Open/Close button color.Open/Close button color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands background opacity [0% - 100%].Commands background opacity [0% - 100%]",
+      "description": "0% - 100%",
+      "tooltip": "Controls how transparent the background is.\n• 0 = Fully transparent (invisible)\n• 100 = Fully opaque (solid)\n• 85 = Slightly transparent (recommended)\n\nExamples: 60, 85, 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands",
+      "description": "List of chat commands",
+      "tooltip": "Array of chat command strings. Players can use these commands in-game. Commands typically start with \"/\" (e.g., [\"/shop\", \"/bank\"]).\n\nExamples: /shop, /bank",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Background image.Background image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Icon [optional].Icon [optional]",
+      "description": "optional",
+      "tooltip": "optional",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Command.Command",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Permission to see.Permission to see",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Outline color.Outline color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[0]..Is Console.Is Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Background image.Background image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Icon [optional].Icon [optional]",
+      "description": "optional",
+      "tooltip": "optional",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Command.Command",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Permission to see.Permission to see",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Outline color.Outline color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[1]..Is Console.Is Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Background image.Background image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Icon [optional].Icon [optional]",
+      "description": "optional",
+      "tooltip": "optional",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Command.Command",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Permission to see.Permission to see",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Outline color.Outline color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[2]..Is Console.Is Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Background image.Background image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Icon [optional].Icon [optional]",
+      "description": "optional",
+      "tooltip": "optional",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Command.Command",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Permission to see.Permission to see",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Outline color.Outline color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Main setup.Main setup.Additional menu.Additional menu.Commands.Commands[3]..Is Console.Is Console",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[0]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[0]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[0]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[0]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[1]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[1]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[1]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[1]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[1]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[2]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[2]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[2]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[2]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[2]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[3]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[3]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[3]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[3]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[3]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[4]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[4]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[4]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[4]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[4]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[5]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[5]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[5]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[5]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[5]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[6]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[6]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[6]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[6]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[6]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[7]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[7]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[7]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[7]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Base Events.Base Events[7]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Hook OnEventStart.Hook OnEventStart",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Hook OnEventStop.Hook OnEventStop",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[0]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Hook OnEventStart.Hook OnEventStart",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Hook OnEventStop.Hook OnEventStop",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[1]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Hook OnEventStart.Hook OnEventStart",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Hook OnEventStop.Hook OnEventStop",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[2]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Hook OnEventStart.Hook OnEventStart",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Hook OnEventStop.Hook OnEventStop",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Name.Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Active color.Active color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Icon.Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Color.Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Events.Custom Events[3]..Enable.Enable",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    }
+  ]
+}

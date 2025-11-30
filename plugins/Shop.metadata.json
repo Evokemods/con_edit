@@ -1,0 +1,1097 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Permission to use plugin (ex: shop.use).Permission to use plugin (ex: shop.use)",
+      "description": "ex: shop.use",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Commands.Commands",
+      "description": "List of chat commands",
+      "tooltip": "Array of chat command strings. Players can use these commands in-game. Commands typically start with \"/\" (e.g., [\"/shop\", \"/bank\"]).\n\nExamples: /shop, /bank",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable money transfers between players?.Enable money transfers between players?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow money transfers to offline players?.Allow money transfers to offline players?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable selling items?.Enable selling items?",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable logging to the console?.Enable logging to the console?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable logging to the file?.Enable logging to the file?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Load images when logging into the server?.Load images when logging into the server?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Work with Notify?.Work with Notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable Offline Image Mode.Enable Offline Image Mode",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Work with LangAPI?.Work with LangAPI?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Can admins edit? (by flag).Can admins edit? (by flag)",
+      "description": "by flag",
+      "tooltip": "by flag",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Block (NoEscape).Block (NoEscape)",
+      "description": "NoEscape",
+      "tooltip": "NoEscape",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe Block.Wipe Block",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe Cooldown.Wipe Cooldown",
+      "description": "Action cooldown time (seconds)",
+      "tooltip": "Time in seconds players must wait between actions.\nPrevents spam/abuse of shop features.\nExample: 60.0 = 60 seconds = 1 minute cooldown.\n\nExamples: 0.0, 60.0, 3600.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Respawn Block.Respawn Block",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Respawn Cooldown.Respawn Cooldown",
+      "description": "Action cooldown time (seconds)",
+      "tooltip": "Time in seconds players must wait between actions.\nPrevents spam/abuse of shop features.\nExample: 60.0 = 60 seconds = 1 minute cooldown.\n\nExamples: 0.0, 60.0, 3600.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Blocking the opening in duels?.Blocking the opening in duels?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown between actions (in seconds).Cooldown between actions (in seconds)",
+      "description": "in seconds",
+      "tooltip": "Time in seconds players must wait between actions.\nPrevents spam/abuse of shop features.\nExample: 60.0 = 60 seconds = 1 minute cooldown.\n\nExamples: 0.0, 60.0, 3600.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Delay between loading images.Delay between loading images",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Type (Plugin/Item).Type (Plugin/Item)",
+      "description": "Plugin/Item",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Plugin name.Plugin name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Balance add hook.Balance add hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Balance remove hook.Balance remove hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Balance show hook.Balance show hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.ShortName.ShortName",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Display Name (empty - default).Display Name (empty - default)",
+      "description": "empty - default",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Title.Title.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Title.Title.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Balance.Balance.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Balance.Balance.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Price.Price",
+      "description": "Item or service price",
+      "tooltip": "The price players pay for items or services. Buy prices are typically higher than sell prices. Uses configured economy system.\n\nExamples: 100, 500, 1000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Price.Price.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Price.Price.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Footer Items Price.Footer Items Price",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Footer Items Price.Footer Items Price.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy.Economy.Footer Items Price.Footer Items Price.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Type (Plugin/Item).Type (Plugin/Item)",
+      "description": "Plugin/Item",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Plugin name.Plugin name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Balance add hook.Balance add hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Balance remove hook.Balance remove hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Balance show hook.Balance show hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..ShortName.ShortName",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Display Name (empty - default).Display Name (empty - default)",
+      "description": "empty - default",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Title.Title.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Title.Title.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Balance.Balance.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Balance.Balance.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Price.Price",
+      "description": "Item or service price",
+      "tooltip": "The price players pay for items or services. Buy prices are typically higher than sell prices. Uses configured economy system.\n\nExamples: 100, 500, 1000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Price.Price.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Price.Price.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Footer Items Price.Footer Items Price",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Footer Items Price.Footer Items Price.Use localized messages?.Use localized messages?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Additional Economics.Additional Economics[0]..Footer Items Price.Footer Items Price.Localized messages.Localized messages.en.en",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories)",
+      "description": "NPC ID - shop categories",
+      "tooltip": "Categories that this item appears in. Use \"*\" for all categories.\nCategories organize items in the shop UI.\nExample: [\"Weapons\", \"Resources\", \"*\"]\n\nExamples: [\"Weapons\"], [\"*\"], [\"Weapons\", \"Resources\"]",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).1234567.1234567.Permission.Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).1234567.1234567.Categories (Titles) [* - all].Categories (Titles) [* - all]",
+      "description": "* - all",
+      "tooltip": "Categories that this item appears in. Use \"*\" for all categories.\nCategories organize items in the shop UI.\nExample: [\"Weapons\", \"Resources\", \"*\"]\n\nExamples: [\"Weapons\"], [\"*\"], [\"Weapons\", \"Resources\"]",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).7654321.7654321.Permission.Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).7654321.7654321.Categories (Titles) [* - all].Categories (Titles) [* - all]",
+      "description": "* - all",
+      "tooltip": "Categories that this item appears in. Use \"*\" for all categories.\nCategories organize items in the shop UI.\nExample: [\"Weapons\", \"Resources\", \"*\"]\n\nExamples: [\"Weapons\"], [\"*\"], [\"Weapons\", \"Resources\"]",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).4644687478.4644687478.Permission.Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.NPC Shops (NPC ID - shop categories).NPC Shops (NPC ID - shop categories).4644687478.4644687478.Categories (Titles) [* - all].Categories (Titles) [* - all]",
+      "description": "* - all",
+      "tooltip": "Categories that this item appears in. Use \"*\" for all categories.\nCategories organize items in the shop UI.\nExample: [\"Weapons\", \"Resources\", \"*\"]\n\nExamples: [\"Weapons\"], [\"*\"], [\"Weapons\", \"Resources\"]",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Display type (Overlay/Hud).Display type (Overlay/Hud)",
+      "description": "Overlay/Hud",
+      "tooltip": "How the shop interface is displayed:\n• \"Overlay\" - Full screen overlay (recommended)\n• \"Hud\" - HUD element (smaller, less intrusive)\n\nOverlay provides better UX for complex shops.\n\nExamples: Overlay, Hud",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Number of digits after decimal point for rounding prices.Number of digits after decimal point for rounding prices",
+      "description": "Item or service price",
+      "tooltip": "The price players pay for items or services. Buy prices are typically higher than sell prices. Uses configured economy system.\n\nExamples: 100, 500, 1000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 1.Color 1.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 1.Color 1.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 2.Color 2.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 2.Color 2.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 3.Color 3.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 3.Color 3.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 5.Color 5.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 5.Color 5.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 7.Color 7.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 7.Color 7.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 8.Color 8.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 8.Color 8.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 9.Color 9.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 9.Color 9.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 10.Color 10.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 10.Color 10.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 11.Color 11.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 11.Color 11.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 12.Color 12.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 12.Color 12.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 13.Color 13.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Interface.Interface.Color 13.Color 13.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Blocked skins for sell.Blocked skins for sell",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Blocked skins for sell.Blocked skins for sell.short name.short name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Blocked skins for sell.Blocked skins for sell.short name 2.short name 2",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Auto-Wipe Settings.Auto-Wipe Settings.Wipe Cooldowns?.Wipe Cooldowns?",
+      "description": "Action cooldown time (seconds)",
+      "tooltip": "Time in seconds players must wait between actions.\nPrevents spam/abuse of shop features.\nExample: 60.0 = 60 seconds = 1 minute cooldown.\n\nExamples: 0.0, 60.0, 3600.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Auto-Wipe Settings.Auto-Wipe Settings.Wipe Players?.Wipe Players?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Auto-Wipe Settings.Auto-Wipe Settings.Wipe Limits?.Wipe Limits?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Custom Vending Machines (Entity ID - settings).Custom Vending Machines (Entity ID - settings)",
+      "description": "Entity ID - settings",
+      "tooltip": "Entity ID - settings",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Settings available containers for selling item.Settings available containers for selling item",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Settings available containers for selling item.Settings available containers for selling item.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Settings available containers for selling item.Settings available containers for selling item.Available Containers (main, belt, wear).Available Containers (main, belt, wear)",
+      "description": "main, belt, wear",
+      "tooltip": "main, belt, wear",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Buy Again Settings.Buy Again Settings.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Buy Again Settings.Buy Again Settings.Permission (ex: shop.buyagain).Permission (ex: shop.buyagain)",
+      "description": "ex: shop.buyagain",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Buy Again Settings.Buy Again Settings.Image.Image",
+      "description": "Image URL for display",
+      "tooltip": "URL to an image file (PNG, JPG, etc.). Used for UI elements, item previews, or notifications. Should be a publicly accessible URL.\n\nExample: https://i.ibb.co/wBn7JzM/image.png",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Formatting Settings.Formatting Settings.Buy Price Format.Buy Price Format",
+      "description": "Item or service price",
+      "tooltip": "The price players pay for items or services. Buy prices are typically higher than sell prices. Uses configured economy system.\n\nExamples: 100, 500, 1000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Formatting Settings.Formatting Settings.Sell Price Format.Sell Price Format",
+      "description": "Item or service price",
+      "tooltip": "The price players pay for items or services. Buy prices are typically higher than sell prices. Uses configured economy system.\n\nExamples: 100, 500, 1000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Formatting Settings.Formatting Settings.Shopping Bag Cost Format.Shopping Bag Cost Format",
+      "description": "Purchase or unlock cost",
+      "tooltip": "The price or cost to purchase/unlock something. Uses the economy system (currency, plugin economy, etc.). Can be a number (scrap amount) or economy points.\n\nExamples: 1000, 5000, 10000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discount.Discount.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discount.Discount.Discount (%).Discount (%)",
+      "description": "%",
+      "tooltip": "%",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discount.Discount.Discount (%).Discount (%).shop.default.shop.default",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discount.Discount.Discount (%).Discount (%).shop.vip.shop.vip",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification)",
+      "description": "message - settings notification",
+      "tooltip": "message - settings notification",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoPermission.NoPermission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoPermission.NoPermission.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoPermission.NoPermission.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).ErrorSyntax.ErrorSyntax.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).ErrorSyntax.ErrorSyntax.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMNotFoundCategories.VMNotFoundCategories",
+      "description": "List of item categories",
+      "tooltip": "Array of category names. Used to group items by type.\n\nExamples: Weapon, Resource, Medical",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMNotFoundCategories.VMNotFoundCategories.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMNotFoundCategories.VMNotFoundCategories.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMNotFound.VMNotFound.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMNotFound.VMNotFound.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMExists.VMExists.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMExists.VMExists.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMInstalled.VMInstalled.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).VMInstalled.VMInstalled.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NPCNotFound.NPCNotFound.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NPCNotFound.NPCNotFound.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NPCInstalled.NPCInstalled.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NPCInstalled.NPCInstalled.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).BuyCooldownMessage.BuyCooldownMessage",
+      "description": "Action cooldown time (seconds)",
+      "tooltip": "Time in seconds players must wait between actions.\nPrevents spam/abuse of shop features.\nExample: 60.0 = 60 seconds = 1 minute cooldown.\n\nExamples: 0.0, 60.0, 3600.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).BuyCooldownMessage.BuyCooldownMessage.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).BuyCooldownMessage.BuyCooldownMessage.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).GiveItem.GiveItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).GiveItem.GiveItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).GiveItem.GiveItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).SellNotify.SellNotify.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).SellNotify.SellNotify.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).SuccessfulTransfer.SuccessfulTransfer.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).SuccessfulTransfer.SuccessfulTransfer.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgIsFavoriteItem.MsgIsFavoriteItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgIsFavoriteItem.MsgIsFavoriteItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgIsFavoriteItem.MsgIsFavoriteItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgAddedToFavoriteItem.MsgAddedToFavoriteItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgAddedToFavoriteItem.MsgAddedToFavoriteItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgAddedToFavoriteItem.MsgAddedToFavoriteItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgNoFavoriteItem.MsgNoFavoriteItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgNoFavoriteItem.MsgNoFavoriteItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgNoFavoriteItem.MsgNoFavoriteItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgRemovedFromFavoriteItem.MsgRemovedFromFavoriteItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgRemovedFromFavoriteItem.MsgRemovedFromFavoriteItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).MsgRemovedFromFavoriteItem.MsgRemovedFromFavoriteItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).BuyLimitReached.BuyLimitReached.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).BuyLimitReached.BuyLimitReached.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).DailyBuyLimitReached.DailyBuyLimitReached.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).DailyBuyLimitReached.DailyBuyLimitReached.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).UIMsgShopInInitialization.UIMsgShopInInitialization.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).UIMsgShopInInitialization.UIMsgShopInInitialization.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoILError.NoILError.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoILError.NoILError.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoUseDuel.NoUseDuel.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).NoUseDuel.NoUseDuel.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).UIDLCItem.UIDLCItem",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).UIDLCItem.UIDLCItem.Type.Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notifications.Notifications.General Notifications (message - settings notification).General Notifications (message - settings notification).UIDLCItem.UIDLCItem.Show notify?.Show notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Buy Settings.Buy Settings.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Buy Settings.Buy Settings.Discord Webhook URL.Discord Webhook URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Buy Settings.Buy Settings.Color (Decimal format).Color (Decimal format)",
+      "description": "Decimal format",
+      "tooltip": "Decimal format",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Buy Settings.Buy Settings.Footer icon URL (for Buy/Sell item icon is used automatically).Footer icon URL (for Buy/Sell item icon is used automatically)",
+      "description": "for Buy/Sell item icon is used automatically",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Buy Settings.Buy Settings.Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount}).Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount})",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Sell Settings.Sell Settings.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Sell Settings.Sell Settings.Discord Webhook URL.Discord Webhook URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Sell Settings.Sell Settings.Color (Decimal format).Color (Decimal format)",
+      "description": "Decimal format",
+      "tooltip": "Decimal format",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Sell Settings.Sell Settings.Footer icon URL (for Buy/Sell item icon is used automatically).Footer icon URL (for Buy/Sell item icon is used automatically)",
+      "description": "for Buy/Sell item icon is used automatically",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Sell Settings.Sell Settings.Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount}).Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount})",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Transfer Settings.Transfer Settings.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Transfer Settings.Transfer Settings.Discord Webhook URL.Discord Webhook URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Transfer Settings.Transfer Settings.Color (Decimal format).Color (Decimal format)",
+      "description": "Decimal format",
+      "tooltip": "Decimal format",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Transfer Settings.Transfer Settings.Footer icon URL (for Buy/Sell item icon is used automatically).Footer icon URL (for Buy/Sell item icon is used automatically)",
+      "description": "for Buy/Sell item icon is used automatically",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Discord Logging Settings.Discord Logging Settings.Transfer Settings.Transfer Settings.Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount}).Footer text. Variables Buy/Sell: {username}, {steamid}, {item}, {amount}, {price}. Transfer: {username}, {steamid}, {targetname}, {targetid}, {amount})",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

@@ -1,0 +1,1511 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Command List.Command List",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Action Cooldown (in seconds, 0 to disable).UI Action Cooldown (in seconds, 0 to disable)",
+      "description": "in seconds, 0 to disable",
+      "tooltip": "in seconds, 0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable Console Logs.Enable Console Logs",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.PopUpAPI - Preset Name.PopUpAPI - Preset Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Require Permission For Use.Require Permission For Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Lock Access To Quarry Profiles If Lost Permission.Lock Access To Quarry Profiles If Lost Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Check For Quarry Amount Permission (option above must be set to true to work).Check For Quarry Amount Permission (option above must be set to true to work)",
+      "description": "option above must be set to true to work",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.OnEntityTakeDamage Return Value.OnEntityTakeDamage Return Value",
+      "description": "Effect or modifier value",
+      "tooltip": "A numeric value representing an effect, multiplier, or modifier. Meaning depends on context (skill effect, price modifier, etc.). Can be percentage, multiplier, or absolute value.\n\nExamples: 1.0, 10.0, 100.0, 200.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mining Quarry/Pump Jack Limit Permissions.Mining Quarry/Pump Jack Limit Permissions",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mining Quarry/Pump Jack Limit Permissions.Mining Quarry/Pump Jack Limit Permissions.virtualquarries.default.virtualquarries.default.pumpjack.pumpjack",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mining Quarry/Pump Jack Limit Permissions.Mining Quarry/Pump Jack Limit Permissions.virtualquarries.default.virtualquarries.default.quarry.quarry",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mining Quarry/Pump Jack Limit Permissions.Mining Quarry/Pump Jack Limit Permissions.virtualquarries.vip.virtualquarries.vip.pumpjack.pumpjack",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mining Quarry/Pump Jack Limit Permissions.Mining Quarry/Pump Jack Limit Permissions.virtualquarries.vip.virtualquarries.vip.quarry.quarry",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Sharing - Require Permission.Sharing - Require Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Sharing - Remove Members If Owner Offline More Than X Days (0, to disable).Sharing - Remove Members If Owner Offline More Than X Days (0, to disable)",
+      "description": "0, to disable",
+      "tooltip": "0, to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Sharing - Share Only To Teammates.Sharing - Share Only To Teammates",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Data - Enable Data Wipe On Server Wipe.Data - Enable Data Wipe On Server Wipe",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Data - Wipe Data Only On Force Wipe.Data - Wipe Data Only On Force Wipe",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Data - Store Container Data In File And Restore On Server Wipe.Data - Store Container Data In File And Restore On Server Wipe",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Data - Store Container Interval (in seconds).Data - Store Container Interval (in seconds)",
+      "description": "in seconds",
+      "tooltip": "in seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Tick (how often quarries dig resources, in seconds).Quarry Tick (how often quarries dig resources, in seconds)",
+      "description": "how often quarries dig resources, in seconds",
+      "tooltip": "how often quarries dig resources, in seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarry Tick (how often quarries dig resources, in seconds).Static Quarry Tick (how often quarries dig resources, in seconds)",
+      "description": "how often quarries dig resources, in seconds",
+      "tooltip": "how often quarries dig resources, in seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry Tick (how often quarries dig resources, in seconds).Excavator Quarry Tick (how often quarries dig resources, in seconds)",
+      "description": "how often quarries dig resources, in seconds",
+      "tooltip": "how often quarries dig resources, in seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Storage Prefab.Storage Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Listed Quarries Permissions Font Size.Listed Quarries Permissions Font Size",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charge - Allow Throwing Survey Charges.Survey Charge - Allow Throwing Survey Charges",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Permission (empty, if not required).Required Permission (empty, if not required)",
+      "description": "empty, if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Chance For Resources (0-100).Chance For Resources (0-100)",
+      "description": "0-100",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Survey Charget Types.Survey Charget Types.survey.survey.Required Item.Required Item.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades - Used Economy Plugin (0 - None, See Website For More Info).Upgrades - Used Economy Plugin (0 - None, See Website For More Info)",
+      "description": "0 - None, See Website For More Info",
+      "tooltip": "0 - None, See Website For More Info",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades - Economy Currency (If Economy Plugin Is 5 - ShoppyStock).Upgrades - Economy Currency (If Economy Plugin Is 5 - ShoppyStock)",
+      "description": "If Economy Plugin Is 5 - ShoppyStock",
+      "tooltip": "If Economy Plugin Is 5 - ShoppyStock",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Removing Quarries - Refund Items.Removing Quarries - Refund Items",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Removing Quarries - Refund Upgrades.Removing Quarries - Refund Upgrades",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Go Back Button - Position (1-2).Go Back Button - Position (1-2)",
+      "description": "1-2",
+      "tooltip": "1-2",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrade UI - Responsive Position.Upgrade UI - Responsive Position",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Enable.Static Quarries - Enable",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Disable Running Effect.Static Quarries - Disable Running Effect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Enable.Excavator Quarry - Enable",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Resource Container Size.Excavator Quarry - Resource Container Size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Container Size.Excavator Quarry - Fuel Container Size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Quarry Requires Permission.Static Quarries - Quarry Requires Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Pump Jack Requires Permission.Static Quarries - Pump Jack Requires Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Requires Permission.Static Quarries - Excavator Requires Permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Resource Container Size.Static Quarries - Resource Container Size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Container Size.Static Quarries - Fuel Container Size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Fuel Item.Static Quarries - Fuel Item.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Excavator Quarry - Fuel Item.Excavator Quarry - Fuel Item.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[1]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[1]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[1]..Amount Per Tick.Amount Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Metal Quarry Output.Static Quarries - Metal Quarry Output[1]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Sulfur Quarry Output.Static Quarries - Sulfur Quarry Output[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Sulfur Quarry Output.Static Quarries - Sulfur Quarry Output[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Sulfur Quarry Output.Static Quarries - Sulfur Quarry Output[0]..Amount Per Tick.Amount Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Sulfur Quarry Output.Static Quarries - Sulfur Quarry Output[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - HQM Quarry Output.Static Quarries - HQM Quarry Output[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - HQM Quarry Output.Static Quarries - HQM Quarry Output[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - HQM Quarry Output.Static Quarries - HQM Quarry Output[0]..Amount Per Tick.Amount Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - HQM Quarry Output.Static Quarries - HQM Quarry Output[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Pump Jack Output.Static Quarries - Pump Jack Output[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Pump Jack Output.Static Quarries - Pump Jack Output[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Pump Jack Output.Static Quarries - Pump Jack Output[0]..Amount Per Tick.Amount Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Pump Jack Output.Static Quarries - Pump Jack Output[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.HQM.HQM[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.HQM.HQM[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.HQM.HQM[0]..Amount Per Tick.Amount Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.HQM.HQM[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Metal.Metal[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Metal.Metal[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Metal.Metal[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Stone.Stone[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Stone.Stone[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Stone.Stone[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Sulfur.Sulfur[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Sulfur.Sulfur[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Static Quarries - Excavator Outputs.Static Quarries - Excavator Outputs.Sulfur.Sulfur[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Required Permission (empty, if not required).Required Permission (empty, if not required)",
+      "description": "empty, if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Displayed Icon.Displayed Icon.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Survey Type.Survey Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Minimal Resources Per Node.Minimal Resources Per Node",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Maximal Resources Per Node.Maximal Resources Per Node",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Fuel Required Per Tick.Fuel Required Per Tick.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Fuel Required Per Tick.Fuel Required Per Tick.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Fuel Required Per Tick.Fuel Required Per Tick.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Fuel Required Per Tick.Fuel Required Per Tick.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Fuel Required Per Tick.Fuel Required Per Tick.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Enable Upgrades.Enable Upgrades",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place[0]..Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Items Required To Place.Items Required To Place[0]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Minimal Output Per Tick.Minimal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Maximal Output Per Tick.Maximal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Resources.Resources.crude.crude.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Required Items.Required Items",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Required Permission To Upgrade.Required Permission To Upgrade",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Required Currency (0 to disable).Required Currency (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Fuel Storage Capacity.Fuel Storage Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Capacity.Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Gather Multiplier.Gather Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Fuel Usage Multiplier.Fuel Usage Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[0]..Additional Resources (Resources keys).Additional Resources (Resources keys)",
+      "description": "Resources keys",
+      "tooltip": "Resources keys",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Permission To Upgrade.Required Permission To Upgrade",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Required Currency (0 to disable).Required Currency (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Fuel Storage Capacity.Fuel Storage Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Capacity.Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Gather Multiplier.Gather Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Fuel Usage Multiplier.Fuel Usage Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.pumpjack.pumpjack.Upgrades.Upgrades[1]..Additional Resources (Resources keys).Additional Resources (Resources keys)",
+      "description": "Resources keys",
+      "tooltip": "Resources keys",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Required Permission (empty, if not required).Required Permission (empty, if not required)",
+      "description": "empty, if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Displayed Icon.Displayed Icon.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Survey Type.Survey Type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Minimal Resources Per Node.Minimal Resources Per Node",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Maximal Resources Per Node.Maximal Resources Per Node",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Fuel Required Per Tick.Fuel Required Per Tick.Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Fuel Required Per Tick.Fuel Required Per Tick.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Fuel Required Per Tick.Fuel Required Per Tick.Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Fuel Required Per Tick.Fuel Required Per Tick.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Fuel Required Per Tick.Fuel Required Per Tick.Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Enable Upgrades.Enable Upgrades",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place[0]..Amount.Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Items Required To Place.Items Required To Place[0]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Minimal Output Per Tick.Minimal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Maximal Output Per Tick.Maximal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.hq.hq.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Minimal Output Per Tick.Minimal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Maximal Output Per Tick.Maximal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.metal.metal.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Minimal Output Per Tick.Minimal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Maximal Output Per Tick.Maximal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Additional Items Required To Place.Additional Items Required To Place[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Additional Items Required To Place.Additional Items Required To Place[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Additional Items Required To Place.Additional Items Required To Place[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.scrap.scrap.Additional Items Required To Place.Additional Items Required To Place[0]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.stone.stone.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Output Item - Shortname.Output Item - Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Output Item - Skin.Output Item - Skin",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Output Item - Display Name.Output Item - Display Name",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Output Item - Icon URL (Required if Skin not 0).Output Item - Icon URL (Required if Skin not 0)",
+      "description": "Required if Skin not 0",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Include Always.Include Always",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Required Permission (empty if not required).Required Permission (empty if not required)",
+      "description": "empty if not required",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Minimal Output Per Tick.Minimal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Maximal Output Per Tick.Maximal Output Per Tick",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Resources.Resources.sulfur.sulfur.Additional Items Required To Place.Additional Items Required To Place",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Required Items.Required Items",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Required Permission To Upgrade.Required Permission To Upgrade",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Required Currency (0 to disable).Required Currency (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Fuel Storage Capacity.Fuel Storage Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Capacity.Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Gather Multiplier.Gather Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Fuel Usage Multiplier.Fuel Usage Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[0]..Additional Resources (Resources keys).Additional Resources (Resources keys)",
+      "description": "Resources keys",
+      "tooltip": "Resources keys",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[0]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Shortname.Shortname",
+      "description": "Item shortname identifier",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Items.Required Items[1]..Icon URL.Icon URL",
+      "description": "Web URL or image URL",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Permission To Upgrade.Required Permission To Upgrade",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Required Currency (0 to disable).Required Currency (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "0 to disable",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Fuel Storage Capacity.Fuel Storage Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Capacity.Capacity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Gather Multiplier.Gather Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Fuel Usage Multiplier.Fuel Usage Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Quarry Profiles.Quarry Profiles.quarry.quarry.Upgrades.Upgrades[1]..Additional Resources (Resources keys).Additional Resources (Resources keys)",
+      "description": "Resources keys",
+      "tooltip": "Resources keys",
+      "confidence": 0.8
+    }
+  ]
+}

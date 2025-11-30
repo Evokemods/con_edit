@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Allow negative balance for accounts.Allow negative balance for accounts",
+      "description": "Allow negative account balances",
+      "tooltip": "If true, players can go into negative balance (debt).\nIf false, transactions that would cause negative balance are blocked.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Balance limit for accounts (0 to disable).Balance limit for accounts (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "Maximum amount a player can have in their account.\nSet to 0 to disable the limit (unlimited).\nPrevents players from accumulating too much currency.\n\nExamples: 0, 1000000, 10000000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Negative balance limit for accounts (0 to disable).Negative balance limit for accounts (0 to disable)",
+      "description": "0 to disable",
+      "tooltip": "Maximum amount a player can have in their account.\nSet to 0 to disable the limit (unlimited).\nPrevents players from accumulating too much currency.\n\nExamples: 0, 1000000, 10000000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Remove unused accounts.Remove unused accounts",
+      "description": "Clean up inactive accounts",
+      "tooltip": "If true, accounts with zero balance that haven't been used are removed.\nHelps keep the database clean.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Log transactions to file.Log transactions to file",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Starting account balance (0 or higher).Starting account balance (0 or higher)",
+      "description": "0 or higher",
+      "tooltip": "The amount of currency new players start with.\nSet to 0 to give players no starting money.\nCommon values: 1000, 5000, 10000\n\nExamples: 0, 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe balances on new save file.Wipe balances on new save file",
+      "description": "Reset balances on server wipe",
+      "tooltip": "If true, all player balances are reset to starting balance on wipe.\nIf false, balances persist across wipes.\n\nExamples: true, false",
+      "confidence": 0.8
+    }
+  ]
+}

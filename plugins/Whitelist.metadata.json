@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Admin Excluded (true/false).Admin Excluded (true/false)",
+      "description": "true/false",
+      "tooltip": "true/false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Reset On Restart (true/false).Reset On Restart (true/false)",
+      "description": "true/false",
+      "tooltip": "true/false",
+      "confidence": 0.8
+    }
+  ]
+}

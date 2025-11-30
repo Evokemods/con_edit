@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.NoClip on Vanish (runs noclip command).NoClip on Vanish (runs noclip command)",
+      "description": "runs noclip command",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use OnEntityTakeDamage hook (Set to true to enable use of vanish.damage perm. Set to false for better performance).Use OnEntityTakeDamage hook (Set to true to enable use of vanish.damage perm. Set to false for better performance)",
+      "description": "Set to true to enable use of vanish.damage perm. Set to false for better performance",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use CanUseLockedEntity hook (Allows vanished players with the perm vanish.unlock to bypass locks. Set to false for better performance).Use CanUseLockedEntity hook (Allows vanished players with the perm vanish.unlock to bypass locks. Set to false for better performance)",
+      "description": "Allows vanished players with the perm vanish.unlock to bypass locks. Set to false for better performance",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Automatically vanish players (with the vanish.use perm) on player connect.Automatically vanish players (with the vanish.use perm) on player connect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Automatically vanish players (with the vanish.use perm) on player disconnect.Automatically vanish players (with the vanish.use perm) on player disconnect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Keep a vanished player hidden on disconnect.Keep a vanished player hidden on disconnect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Teleport a vanished player under the map on disconnect.Teleport a vanished player under the map on disconnect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Teleport a vanished player above the map on connect.Teleport a vanished player above the map on connect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Bypass violation checks for vanished players.Bypass violation checks for vanished players",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Turn off fly hack detection for players in vanish.Turn off fly hack detection for players in vanish",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Disable metabolism in vanish.Disable metabolism in vanish",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable teleport to marker when vanished.Enable teleport to marker when vanished",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable vanishing and reappearing sound effects.Enable vanishing and reappearing sound effects",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Make sound effects public.Make sound effects public",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable chat notifications.Enable chat notifications",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable GUI.Enable GUI",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use Native Invis Icon.Use Native Invis Icon",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Icon URL (.png or .jpg).Icon URL (.png or .jpg)",
+      "description": ".png or .jpg",
+      "tooltip": "A web URL, typically for images, API endpoints, or external resources. Common formats: https://example.com/image.png or http://example.com/api\n\nExamples: https://i.ibb.co/wBn7JzM/image.png, https://example.com/api",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Icon Sprite.Icon Sprite",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Image Color.Image Color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Image AnchorMin.Image AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Image AnchorMax.Image AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    }
+  ]
+}

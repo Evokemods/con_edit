@@ -1,0 +1,1517 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.General Settings.General Settings.Only the owner can upgrade the furnace.Only the owner can upgrade the furnace",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Only teammates can upgrade the furnace.Only teammates can upgrade the furnace",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Only Allow Oven Toggling by Owner & Team.Only Allow Oven Toggling by Owner & Team",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Keep attributes when removing.Keep attributes when removing",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Requires upgrade button permission.Requires upgrade button permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Requires show status permission.Requires show status permission",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.General Settings.General Settings.Show furnace item cooking animation.Show furnace item cooking animation",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Currency type (0 - Scrap | 1 - Economics | 2 - Server Rewards).Currency type (0 - Scrap | 1 - Economics | 2 - Server Rewards)",
+      "description": "0 - Scrap | 1 - Economics | 2 - Server Rewards",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Currency item (if the currency type is '0').Currency item (if the currency type is '0')",
+      "description": "if the currency type is '0'",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Currency item (if the currency type is '0').Currency item (if the currency type is '0').Short name.Short name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Currency item (if the currency type is '0').Currency item (if the currency type is '0').Skin ID.Skin ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Visual Settings.Visual Settings.Use chat messages.Use chat messages",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Visual Settings.Visual Settings.Notification plugin (0 - None | 1 - Toastify | 2 - Notify).Notification plugin (0 - None | 1 - Toastify | 2 - Notify)",
+      "description": "0 - None | 1 - Toastify | 2 - Notify",
+      "tooltip": "0 - None | 1 - Toastify | 2 - Notify",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Visual Settings.Visual Settings.Notify notification type.Notify notification type",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Visual Settings.Visual Settings.Upgrade effect (empty = disabled).Upgrade effect (empty = disabled)",
+      "description": "empty = disabled",
+      "tooltip": "empty = disabled",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Disable status panel.Disable status panel",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button.Upgrade button.Anchor.Anchor",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button.Upgrade button.Offset.Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button.Upgrade button.Background color.Background color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button.Upgrade button.Font size.Font size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on electric furnaces.Upgrade button on electric furnaces.Anchor.Anchor",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on electric furnaces.Upgrade button on electric furnaces.Offset.Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on electric furnaces.Upgrade button on electric furnaces.Background color.Background color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on electric furnaces.Upgrade button on electric furnaces.Font size.Font size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on mixing table.Upgrade button on mixing table.Anchor.Anchor",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on mixing table.Upgrade button on mixing table.Offset.Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on mixing table.Upgrade button on mixing table.Background color.Background color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Upgrade button on mixing table.Upgrade button on mixing table.Font size.Font size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Status panel.Status panel.Anchor.Anchor",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Status panel.Status panel.Offset.Offset",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Status panel.Status panel.Background color.Background color",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Status panel.Status panel.Font size.Font size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Smelting speed multiplier.Smelting speed multiplier",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Auto split cookables.Auto split cookables",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Features Settings.Features Settings.Auto add fuel.Auto add fuel",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Default Settings.Default Settings.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Default Settings.Default Settings.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Default Settings.Default Settings.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Default Settings.Default Settings.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Default Settings.Default Settings.Charcoal byproduct chance(1.0 = 100%, 0.5 = 50%).Charcoal byproduct chance(1.0 = 100%, 0.5 = 50%)",
+      "description": "1.0 = 100%, 0.5 = 50%",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Enable Mixing Table upgrade.Enable Mixing Table upgrade",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table speed upgrade.Mixing Table speed upgrade",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)",
+      "description": "Max 100",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Mixing Table Upgrade Settings.Mixing Table Upgrade Settings.Mixing Table Speed in %(Max 100).Mixing Table Speed in %(Max 100)[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.furnace.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.furnace.large.furnace.large.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.electric.furnace.electric.furnace.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.legacyfurnace.legacyfurnace.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.campfire.campfire.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.bbq.bbq.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Smelting speed.Smelting speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed",
+      "description": "Furnace smelting speed multiplier",
+      "tooltip": "How fast the furnace smelts items.\n• 1.0 = normal speed\n• 2.0 = double speed\n• 0.5 = half speed\n\nExamples: 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Fuel speed.Fuel speed[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Resource output multiplier.Resource output multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[0]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[0]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[1]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[1]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[2]..Cost.Cost",
+      "description": "Cost to upgrade furnace",
+      "tooltip": "Amount of currency or items required to upgrade a furnace.\nUpgrades typically improve smelting speed or fuel efficiency.\n\nExamples: 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrades Settings.Upgrades Settings.small.oil.refinery.small.oil.refinery.Charcoal multiplier.Charcoal multiplier[2]..Multiplier.Multiplier",
+      "description": "Effect multiplier",
+      "tooltip": "A multiplier that affects rates, speeds, or amounts. • 1.0 = normal (100%, no change)\n• 2.0 = double (200%, 2x effect)\n• 0.5 = half (50%, 0.5x effect)\n\nUsed for gathering rates, craft speeds, etc.\n\nExamples: 0.5, 1.0, 2.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}

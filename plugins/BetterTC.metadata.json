@@ -1,0 +1,977 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Check for updates when loading.Check for updates when loading",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Bypass DLC ownership check (⚠ only allowed on creative/test servers per Facepunch rules).Bypass DLC ownership check (⚠ only allowed on creative/test servers per Facepunch rules)",
+      "description": "⚠ only allowed on creative/test servers per Facepunch rules",
+      "tooltip": "⚠ only allowed on creative/test servers per Facepunch rules",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use NoEscape Plugin.Use NoEscape Plugin",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use RaidBlock Plugin.Use RaidBlock Plugin",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - Color Default.GUI Buttons TC - Color Default",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - Color Active.GUI Buttons TC - Color Active",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - OffsetMin.GUI Buttons TC - OffsetMin",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - OffsetMax.GUI Buttons TC - OffsetMax",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - AnchorMin.GUI Buttons TC - AnchorMin",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.GUI Buttons TC - AnchorMax.GUI Buttons TC - AnchorMax",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Alert Gametip.Alert Gametip",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Alert Chat.Alert Chat",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Alert Notify Plugin.Alert Notify Plugin",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notify: select what notification type to be used.Notify: select what notification type to be used",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notify: select what notification type to be used.Notify: select what notification type to be used.error.error",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Notify: select what notification type to be used.Notify: select what notification type to be used.info.info",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Color Prefix Chat.Color Prefix Chat",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Show Admin Auth List.Show Admin Auth List",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Show SteamID Auth List.Show SteamID Auth List",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrade Effect.Upgrade Effect",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colour Selection MultiColor Option.Colour Selection MultiColor Option",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Reskin Enable.Reskin Enable",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Reskin Wall Enable.Reskin Wall Enable",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Only reskin on wall of the same grade.Only reskin on wall of the same grade",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Reskin Wall TC Distance (Default: 100).Reskin Wall TC Distance (Default: 100)",
+      "description": "Default: 100",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Deployables Repair.Deployables Repair",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Repair Cooldown After Recent Damage (seconds).Repair Cooldown After Recent Damage (seconds)",
+      "description": "seconds",
+      "tooltip": "seconds",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Downgrade Enable.Downgrade Enable",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Downgrade only Owner Entity Build.Downgrade only Owner Entity Build",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrade only Owner Entity Build.Upgrade only Owner Entity Build",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Upgrade / Downgrade only Owner and Team.Upgrade / Downgrade only Owner and Team",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wallpaper Enable.Wallpaper Enable",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wallpaper placement Cost (Cloth).Wallpaper placement Cost (Cloth)",
+      "description": "Cloth",
+      "tooltip": "The price or cost to purchase/unlock something. Uses the economy system (currency, plugin economy, etc.). Can be a number (scrap amount) or economy points.\n\nExamples: 1000, 5000, 10000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wallpaper Damage.Wallpaper Damage",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wallpaper both sides.Wallpaper both sides",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Force both sides including external sides.Force both sides including external sides",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Upgrade (larger number is slower).Cooldown Frequency Upgrade (larger number is slower)",
+      "description": "larger number is slower",
+      "tooltip": "larger number is slower",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Upgrade (larger number is slower).Cooldown Frequency Upgrade (larger number is slower).bettertc.use.bettertc.use",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Upgrade (larger number is slower).Cooldown Frequency Upgrade (larger number is slower).bettertc.vip.bettertc.vip",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Reskin (larger number is slower).Cooldown Frequency Reskin (larger number is slower)",
+      "description": "larger number is slower",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Reskin (larger number is slower).Cooldown Frequency Reskin (larger number is slower).bettertc.use.bettertc.use",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Reskin (larger number is slower).Cooldown Frequency Reskin (larger number is slower).bettertc.vip.bettertc.vip",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Repair (larger number is slower).Cooldown Frequency Repair (larger number is slower)",
+      "description": "larger number is slower",
+      "tooltip": "larger number is slower",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Repair (larger number is slower).Cooldown Frequency Repair (larger number is slower).bettertc.use.bettertc.use",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Repair (larger number is slower).Cooldown Frequency Repair (larger number is slower).bettertc.vip.bettertc.vip",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Wallpaper (larger number is slower).Cooldown Frequency Wallpaper (larger number is slower)",
+      "description": "larger number is slower",
+      "tooltip": "larger number is slower",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Wallpaper (larger number is slower).Cooldown Frequency Wallpaper (larger number is slower).bettertc.use.bettertc.use",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cooldown Frequency Wallpaper (larger number is slower).Cooldown Frequency Wallpaper (larger number is slower).bettertc.vip.bettertc.vip",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cost Modifier for repairs.Cost Modifier for repairs",
+      "description": "Purchase or unlock cost",
+      "tooltip": "The price or cost to purchase/unlock something. Uses the economy system (currency, plugin economy, etc.). Can be a number (scrap amount) or economy points.\n\nExamples: 1000, 5000, 10000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cost Modifier for repairs.Cost Modifier for repairs.bettertc.use.bettertc.use",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Cost Modifier for repairs.Cost Modifier for repairs.bettertc.vip.bettertc.vip",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory",
+      "description": "Tool Cupboard settings",
+      "tooltip": "Configuration for tool cupboards.\nCan control decay, authorization, and other TC features.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.gunpowder.gunpowder",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.sulfur.sulfur",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.sulfur.ore.sulfur.ore",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.explosives.explosives",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.diesel_barrel.diesel_barrel",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.cctv.camera.cctv.camera",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Allow Items in TC Inventory.Allow Items in TC Inventory.targeting.computer.targeting.computer",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items",
+      "description": "List of item identifiers",
+      "tooltip": "Array of item shortnames. Each entry should be a valid Rust item shortname.\n\nExamples: rifle.ak, campfire",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Wall.Wall",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[0]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[1]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[2]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Wall.Wall",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[3]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[4]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Wall.Wall",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[5]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[6]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[7]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[8]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[9]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..ID.ID",
+      "description": "Item skin identifier",
+      "tooltip": "Numeric identifier for an item skin. 0 = default skin. Higher numbers are workshop skins from Steam.\n\nExamples: 0, 13076",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..Img Icon.Img Icon",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..ItemID.ItemID",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..SkinID.SkinID",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..Color.Color",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..ItemID2.ItemID2",
+      "description": "Item identifier (shortname)",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Items.Items[10]..Permission Use.Permission Use",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    }
+  ]
+}

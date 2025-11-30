@@ -1,0 +1,2291 @@
+{
+  "version": "1.0.0",
+  "metadata": [
+    {
+      "fieldPath": "root.Work with LangAPI?.Work with LangAPI?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Work with Notify?.Work with Notify?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Enable Offline Image Mode.Enable Offline Image Mode",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Commands.Commands",
+      "description": "List of chat commands",
+      "tooltip": "Array of chat command strings. Players can use these commands in-game. Commands typically start with \"/\" (e.g., [\"/shop\", \"/bank\"]).\n\nExamples: /shop, /bank",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Permission (example: banksystem.use).Permission (example: banksystem.use)",
+      "description": "example: banksystem.use",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Starting balance.Starting balance",
+      "description": "Initial bank balance for new players",
+      "tooltip": "The amount of currency new players start with in their bank account.\nOnly applies when they first create an account.\nUses the currency configured in Currency Settings.\n\nExamples: 0, 1000, 5000",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Card Image.Card Image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Transit Image.Transit Image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Withdraw Image.Withdraw Image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Transfer Image.Transfer Image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Exit Image.Exit Image",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Disable the close button in the ATM header.Disable the close button in the ATM header",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Enable item split control? (if there are errors with stack plugins - it is worth turning off).Enable item split control? (if there are errors with stack plugins - it is worth turning off)",
+      "description": "if there are errors with stack plugins - it is worth turning off",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Short Name.Short Name",
+      "description": "Currency item shortname",
+      "tooltip": "The item shortname used as bank currency.\nExample: \"sticks\" for sticks, \"scrap\" for scrap.\nThis item is used for all bank transactions.\n\nExamples: sticks, scrap, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Currency Settings.Currency Settings.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Card auto-creation.Card auto-creation",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Use card expiration date?.Use card expiration date?",
+      "description": "Bank card expiration (days)",
+      "tooltip": "Number of days before a bank card expires.\nAfter expiration, players must create a new card.\nSet to 0 or disable \"Use card expiration date\" for no expiration.\n\nExamples: 7, 30, 90",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Card expiry date (in days).Card expiry date (in days)",
+      "description": "in days",
+      "tooltip": "Number of days before a bank card expires.\nAfter expiration, players must create a new card.\nSet to 0 or disable \"Use card expiration date\" for no expiration.\n\nExamples: 7, 30, 90",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Minimum deposit (amount).Minimum deposit (amount)",
+      "description": "amount",
+      "tooltip": "The smallest amount players can deposit or withdraw in one transaction.\nPrevents very small transactions that clutter logs.\nExample: 1.0 = minimum 1 unit per transaction.\n\nExamples: 1.0, 10.0, 100.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Minimum withdrawal (amount).Minimum withdrawal (amount)",
+      "description": "amount",
+      "tooltip": "The smallest amount players can deposit or withdraw in one transaction.\nPrevents very small transactions that clutter logs.\nExample: 1.0 = minimum 1 unit per transaction.\n\nExamples: 1.0, 10.0, 100.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Enable Deposit fee?.Enable Deposit fee?",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Minimum deposit fee.Minimum deposit fee",
+      "description": "Minimum transaction amount",
+      "tooltip": "The smallest amount players can deposit or withdraw in one transaction.\nPrevents very small transactions that clutter logs.\nExample: 1.0 = minimum 1 unit per transaction.\n\nExamples: 1.0, 10.0, 100.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Maximum deposit fee.Maximum deposit fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Default deposit fee.Default deposit fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Step deposit fee.Step deposit fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Enable Withdrawal fee?.Enable Withdrawal fee?",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Minimum withdrawal fee.Minimum withdrawal fee",
+      "description": "Minimum transaction amount",
+      "tooltip": "The smallest amount players can deposit or withdraw in one transaction.\nPrevents very small transactions that clutter logs.\nExample: 1.0 = minimum 1 unit per transaction.\n\nExamples: 1.0, 10.0, 100.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Maximum withdrawal fee.Maximum withdrawal fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Default withdrawal fee.Default withdrawal fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Step withdrawal fee.Step withdrawal fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Enable breakage?.Enable breakage?",
+      "description": "ATM breakage chance",
+      "tooltip": "Percentage chance the ATM breaks during use.\nRange: 0.0 to 100.0 (0% to 100%).\nWhen ATM breaks, players must repair it with items.\n\nCan be permission-based (VIP players have lower breakage).\n\nExamples: 0.0, 1.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Default breakage percentage during operation.Default breakage percentage during operation",
+      "description": "ATM breakage chance",
+      "tooltip": "Percentage chance the ATM breaks during use.\nRange: 0.0 to 100.0 (0% to 100%).\nWhen ATM breaks, players must repair it with items.\n\nCan be permission-based (VIP players have lower breakage).\n\nExamples: 0.0, 1.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Breakage percentage during operation.Breakage percentage during operation",
+      "description": "ATM breakage chance",
+      "tooltip": "Percentage chance the ATM breaks during use.\nRange: 0.0 to 100.0 (0% to 100%).\nWhen ATM breaks, players must repair it with items.\n\nCan be permission-based (VIP players have lower breakage).\n\nExamples: 0.0, 1.0, 5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Breakage percentage during operation.Breakage percentage during operation.banksystem.vip.banksystem.vip",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Breakage percentage during operation.Breakage percentage during operation.banksystem.premium.banksystem.premium",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)",
+      "description": "for 1%",
+      "tooltip": "The shortname of a Rust item. Shortnames are lowercase identifiers with dots or underscores (e.g., \"rifle.ak\", \"box.wooden.large\").\n\nExamples: rifle.ak, campfire, wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[0]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[0]..Amount (for 1%).Amount (for 1%)",
+      "description": "for 1%",
+      "tooltip": "for 1%",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[0]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[0]..Title (empty - default).Title (empty - default)",
+      "description": "empty - default",
+      "tooltip": "empty - default",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[1]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[1]..Amount (for 1%).Amount (for 1%)",
+      "description": "for 1%",
+      "tooltip": "for 1%",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[1]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[1]..Title (empty - default).Title (empty - default)",
+      "description": "empty - default",
+      "tooltip": "empty - default",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[2]..Short Name.Short Name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[2]..Amount (for 1%).Amount (for 1%)",
+      "description": "for 1%",
+      "tooltip": "for 1%",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[2]..Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Repair Settings.Repair Settings.Items (for 1%).Items (for 1%)[2]..Title (empty - default).Title (empty - default)",
+      "description": "empty - default",
+      "tooltip": "empty - default",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Skin.Skin",
+      "description": "Item skin ID",
+      "tooltip": "The numeric skin ID for an item. Skins change the appearance of items. Skin ID 0 means default/no skin. Find skins at: steamcommunity.com/market\n\nExamples: 0, 13076, 10135",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Position.Position.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Position.Position.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Position.Position.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Deposit Fee.Deposit Fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.compound.compound.Withdraw Fee.Withdraw Fee",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Position.Position.x.x",
+      "description": "Maximum item quantity",
+      "tooltip": "The maximum number of items that can be given/spawned.\n\nExamples: 10, 100, 250",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Position.Position.y.y",
+      "description": "Entity or item type identifier",
+      "tooltip": "The type classification for an entity or item. Can be: ItemDefinition (for items), BaseEntity (for deployables), or specific entity types. Often used with shortname or prefab.\n\nExamples: ItemDefinition, BaseEntity, BasePlayer",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Position.Position.z.z",
+      "description": "Localized text translations",
+      "tooltip": "Text translations for different languages. Format: {\"en\": \"English text\", \"fr\": \"French text\"}. Used with LangAPI plugin for multi-language support.\n\nExample: {\"en\": \"Balance\", \"fr\": \"Solde\"}",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Deposit Fee.Deposit Fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Monuments.Monuments.bandit.bandit.Withdraw Fee.Withdraw Fee",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Settings for ATMs from MonumentAddons.Settings for ATMs from MonumentAddons.Display Name.Display Name",
+      "description": "Item display name",
+      "tooltip": "The name shown to players in-game. Different from shortname which is the identifier. Example: shortname \"rifle.ak\" has display name \"Assault Rifle\".\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Settings for ATMs from MonumentAddons.Settings for ATMs from MonumentAddons.Deposit Fee.Deposit Fee",
+      "description": "Transaction fee percentage",
+      "tooltip": "Fee charged on deposits/withdrawals as a percentage.\nRange: 0.0 to 100.0 (0% to 100%).\nExample: 5.0 = 5% fee on each transaction.\n\nFees can be permission-based for VIP players.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Spawn Settings.Spawn Settings.Settings for ATMs from MonumentAddons.Settings for ATMs from MonumentAddons.Withdraw Fee.Withdraw Fee",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Shop Name ({id} {owner}).Shop Name ({id} {owner})",
+      "description": "{id} {owner}",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Commands to open ATM menu.Commands to open ATM menu",
+      "description": "Chat command identifier",
+      "tooltip": "A chat command that players can type (e.g., \"/shop\", \"/bank\", \"/home\"). Commands usually start with \"/\" and are case-insensitive. See: umod.org/guides/the-basics/commands\n\nExamples: /shop, /bank, /home, /tp",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Permission to open ATM menu via command.Permission to open ATM menu via command",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.ATM Settings.ATM Settings.Notify a player when they don't have permissions when opening the ATM menu via command?.Notify a player when they don't have permissions when opening the ATM menu via command?",
+      "description": "Permission node identifier",
+      "tooltip": "A permission node string (e.g., \"pluginname.use\", \"pluginname.admin\"). Permissions control access to plugin features. Format: usually \"pluginname.action\" or \"pluginname.feature\"\n\nExamples: pluginname.use, pluginname.admin, betterteams.marker",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Handing out an award?.Handing out an award?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost)",
+      "description": "shortname - cost",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).sulfur.ore.sulfur.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).metal.ore.metal.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).hq.metal.ore.hq.metal.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).stone.ore.stone.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_elite.crate_elite",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_normal.crate_normal",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_normal_2.crate_normal_2",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).heli_crate.heli_crate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).bradley_crate.bradley_crate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).supply_drop.supply_drop",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).codelockedhackablecrate.codelockedhackablecrate",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).codelockedhackablecrate_oilrig.codelockedhackablecrate_oilrig",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_underwater_advanced.crate_underwater_advanced",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_ammunition.crate_ammunition",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_medical.crate_medical",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_food_1.crate_food_1",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_food_2.crate_food_2",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_tools.crate_tools",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_basic.crate_basic",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).crate_underwater_basic.crate_underwater_basic",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).loot_barrel_1.loot_barrel_1",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).loot_barrel_2.loot_barrel_2",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).oil_barrel.oil_barrel",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).foodbox.foodbox",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).minecart.minecart",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).trash-pile-1.trash-pile-1",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).vehicle_parts.vehicle_parts",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).tech_parts_1.tech_parts_1",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Cost Table (shortname - cost).Cost Table (shortname - cost).tech_parts_2.tech_parts_2",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost)",
+      "description": "shortname - cost",
+      "tooltip": "The unique shortname for a Rust item (e.g., \"rifle.ak\", \"campfire\", \"wood\"). Shortnames are used in commands and configurations. Find items at: corrosionhour.com/rust-items-database\n\nExamples: rifle.ak, campfire, wood, stones, metal.refined",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).sulfur.ore.sulfur.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).metal.ore.metal.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).hq.metal.ore.hq.metal.ore",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).stones.stones",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).wood-collectable.wood-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).metal-collectable.metal-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).sulfur-collectable.sulfur-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).stone-collectable.stone-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).hemp-collectable.hemp-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).diesel_collectable.diesel_collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).corn.entity.corn.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).pumpkin.entity.pumpkin.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).potato.entity.potato.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).hemp.entity.hemp.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).wheat.entity.wheat.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).sunflower.entity.sunflower.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).orchid.entity.orchid.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).rose.entity.rose.entity",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).mushroom-cluster-6.mushroom-cluster-6",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).mushroom-cluster-5.mushroom-cluster-5",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-yellow-collectable.berry-yellow-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-white-collectable.berry-white-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-red-collectable.berry-red-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-green-collectable.berry-green-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-blue-collectable.berry-blue-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Tracking Settings.Tracking Settings.Collectible Items Cost Table (shortname - cost).Collectible Items Cost Table (shortname - cost).berry-black-collectable.berry-black-collectable",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe Settings.Wipe Settings.Wipe Players?.Wipe Players?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe Settings.Wipe Settings.Wipe Logs?.Wipe Logs?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Wipe Settings.Wipe Settings.Wipe ATMs?.Wipe ATMs?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy Settings.Economy Settings.Use own economic system?.Use own economic system?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy Settings.Economy Settings.Plugin name.Plugin name",
+      "description": "Display name or identifier",
+      "tooltip": "A human-readable name. Can be an item display name, player name, or custom identifier. For items, this is usually the display name shown to players.\n\nExamples: Assault Rifle, Camp Fire, Wood",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy Settings.Economy Settings.Balance add hook.Balance add hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy Settings.Economy Settings.Balance remove hook.Balance remove hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Economy Settings.Economy Settings.Balance show hook.Balance show hook",
+      "description": "Plugin hook identifier",
+      "tooltip": "A hook name that connects to other plugins or game events. Hooks allow plugins to interact with each other. Format: usually \"PluginName.HookName\" or just \"HookName\"\n\nExamples: Deposit, Withdraw, Balance",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[0]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[0]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[0]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[0]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[0]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[1]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[1]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[1]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[1]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[1]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[2]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[2]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[2]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[2]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[2]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[3]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[3]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[3]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[3]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[3]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[4]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[4]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[4]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[4]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[4]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[5]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[5]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[5]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[5]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[5]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[6]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[6]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[6]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[6]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[6]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[7]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[7]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[7]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[7]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[7]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[8]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[8]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[8]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[8]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[8]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[9]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[9]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[9]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[9]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[9]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[10]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[10]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[10]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[10]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[10]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[11]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[11]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[11]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[11]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[11]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[12]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[12]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[12]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[12]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[12]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[13]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[13]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[13]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[13]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[13]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[14]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[14]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[14]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[14]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[14]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[15]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[15]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[15]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[15]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[15]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[16]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[16]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[16]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[16]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[16]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[17]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[17]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[17]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[17]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[17]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[18]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[18]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[18]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[18]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[18]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[19]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[19]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[19]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[19]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[19]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[20]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[20]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[20]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[20]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[20]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[21]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[21]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[21]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[21]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[21]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[22]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[22]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[22]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[22]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[22]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[23]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[23]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[23]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[23]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[23]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[24]..Enabled.Enabled",
+      "description": "Enable or disable feature",
+      "tooltip": "If true, this feature/item/skill is active and available. If false, it is disabled and hidden from players.\n\nExamples: true, false",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[24]..Prefab.Prefab",
+      "description": "Prefab path identifier",
+      "tooltip": "The full prefab path for a Rust entity (e.g., \"assets/prefabs/npc/patrol helicopter/heli_crate.prefab\"). Prefabs define deployable objects, NPCs, and world entities. Common paths: assets/prefabs/, assets/bundled/prefabs/\n\nExamples: assets/prefabs/npc/patrol helicopter/heli_crate.prefab, assets/bundled/prefabs/radtown/crate_elite.prefab, assets/prefabs/deployable/campfire/campfire.prefab",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[24]..Chance.Chance",
+      "description": "Probability percentage (0-100)",
+      "tooltip": "A percentage value representing probability (0-100). 0 = never happens, 100 = always happens. Can be a decimal (e.g., 12.5 for 12.5% chance).\n\nExamples: 0, 50, 100, 12.5",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[24]..Min Amount.Min Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Drop Settings.Drop Settings[24]..Max Amount.Max Amount",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.First color.First color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.First color.First color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Second color.Second color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Second color.Second color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Third color.Third color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Third color.Third color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fourth color.Fourth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fourth color.Fourth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fifth color.Fifth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fifth color.Fifth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Sixth color.Sixth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Sixth color.Sixth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Seventh color.Seventh color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Seventh color.Seventh color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eighth color.Eighth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eighth color.Eighth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Ninth color.Ninth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Ninth color.Ninth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Tenth color.Tenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Tenth color.Tenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eleventh color.Eleventh color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eleventh color.Eleventh color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Twelfth color.Twelfth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Twelfth color.Twelfth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Thirteenth color.Thirteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Thirteenth color.Thirteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fourteenth color.Fourteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fourteenth color.Fourteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fifteenth color.Fifteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Fifteenth color.Fifteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Sixteenth color.Sixteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Sixteenth color.Sixteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Seventeenth color.Seventeenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Seventeenth color.Seventeenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eighteenth color.Eighteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Eighteenth color.Eighteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Nineteenth color.Nineteenth color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Colors.Colors.Nineteenth color.Nineteenth color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Bank Header | Height.Bank Header | Height",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Bank Header | Up Indent.Bank Header | Up Indent",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Show Transactions history?.Show Transactions history?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transactions history | Page button margin.Transactions history | Page button margin",
+      "description": "Spacing between UI elements",
+      "tooltip": "Space in pixels between UI elements or around content. Larger margins = more spacing. Used for card spacing, button gaps, etc.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transactions history | Page button size.Transactions history | Page button size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Show Gather history?.Show Gather history?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Gather history | Page button margin.Gather history | Page button margin",
+      "description": "Spacing between UI elements",
+      "tooltip": "Space in pixels between UI elements or around content. Larger margins = more spacing. Used for card spacing, button gaps, etc.\n\nExamples: 0.0, 5.0, 10.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Gather history | Page button size.Gather history | Page button size",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Show card?.Show card?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Card | Left indent.Card | Left indent",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Show Transfers?.Show Transfers?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfers.Title: Transfers.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Recent Transfers.Title: Recent Transfers.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Player has no transactions Title.Title: Player has no transactions Title.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Title: Transfer by card.Title: Transfer by card.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Card number.Transfer by card | Card number.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Amount.Transfer by card | Amount.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.FontSize.FontSize",
+      "description": "UI element size",
+      "tooltip": "Size of a UI element in pixels. Can be width, height, or both. Larger values = bigger elements. Example: 60.0 = 60 pixels wide/tall.\n\nExamples: 30.0, 60.0, 120.0, 180.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.Align.Align",
+      "description": "Text alignment",
+      "tooltip": "How text is aligned within its container. Common values:\n• \"MiddleCenter\" - Centered horizontally and vertically\n• \"UpperLeft\" - Top-left corner\n• \"LowerRight\" - Bottom-right corner\n\nFormat: VerticalHorizontal (e.g., MiddleCenter).\n\nExamples: MiddleCenter, UpperLeft, LowerRight",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.Color.Color.HEX.HEX",
+      "description": null,
+      "tooltip": null,
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.Color.Color.Opacity (0 - 100).Opacity (0 - 100)",
+      "description": "0 - 100",
+      "tooltip": "0 - 100",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.Font.Font",
+      "description": "Font file name",
+      "tooltip": "Name of the font file to use for text. Font files must be in the plugin's font directory. Example: \"robotocondensed-bold.ttf\"\n\nExamples: robotocondensed-bold.ttf, arial.ttf",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.AnchorMin.AnchorMin",
+      "description": "UI anchor minimum position",
+      "tooltip": "Bottom-left anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"0 0\" = bottom-left, \"0.5 0.5\" = center.\n\nExamples: 0 0, 0.5 0.5, 0 1",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.AnchorMax.AnchorMax",
+      "description": "UI anchor maximum position",
+      "tooltip": "Top-right anchor point for UI element (0-1 range). Format: \"X Y\" where X and Y are 0.0 to 1.0. Example: \"1 1\" = top-right, \"0.5 0.5\" = center point.\n\nExamples: 1 1, 0.5 0.5, 1 0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.OffsetMin.OffsetMin",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.UI Settings.UI Settings.Transfer by card | Transfer button.Transfer by card | Transfer button.OffsetMax.OffsetMax",
+      "description": "UI element position offset",
+      "tooltip": "Distance in pixels to offset a UI element from its default position. Can be horizontal (X) or vertical (Y) offset. Positive values move right/down, negative move left/up.\n\nExamples: 0.0, 5.0, 10.0, -5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Log Settings.Log Settings.Collect Gather logs?.Collect Gather logs?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Log Settings.Log Settings.Collect Transfers logs?.Collect Transfers logs?",
+      "description": "Enable or disable this feature",
+      "tooltip": "Enable or disable this feature",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version",
+      "description": "Plugin version (read-only)",
+      "tooltip": "The plugin version number. This is set by the developer and should not be edited. Format: Major.Minor.Patch (e.g., 2.0.31)\n\nExamples: 2.0.31, 1.5.0",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Major.Major",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Minor.Minor",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    },
+    {
+      "fieldPath": "root.Version.Version.Patch.Patch",
+      "description": "Version number (read-only, set by developer)",
+      "tooltip": "This version field is automatically managed by the plugin and should not be edited.",
+      "confidence": 0.8
+    }
+  ]
+}
