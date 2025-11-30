@@ -43,16 +43,28 @@ And many more through pattern recognition!
 
 ## Getting Started
 
-### Prerequisites
+### Quick Start (Windows Users)
+
+**Download the latest release:**
+1. Go to [Releases](https://github.com/Evokemods/con_edit/releases)
+2. Download `ConEdit-Windows-v1.0.0.zip`
+3. Extract the zip file to any folder
+4. Double-click `ConEdit.exe` to run
+
+No installation required! All dependencies are included.
+
+### Building from Source
+
+#### Prerequisites
 
 - Flutter SDK (3.9.2 or higher)
 - Dart SDK (3.9.2 or higher)
 
-### Installation
+#### Installation
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/con_edit.git
+git clone https://github.com/Evokemods/con_edit.git
 cd con_edit
 ```
 
@@ -65,6 +77,23 @@ flutter pub get
 ```bash
 flutter run
 ```
+
+#### Building Windows Release
+
+To create a distributable Windows build:
+
+**Using PowerShell:**
+```powershell
+.\scripts\build_windows_release.ps1
+```
+
+**Using Git Bash/WSL:**
+```bash
+chmod +x scripts/build_windows_release.sh
+./scripts/build_windows_release.sh
+```
+
+This will create `ConEdit-Windows-v1.0.0.zip` in the project root, ready for distribution.
 
 ### Training on Your Configs
 
