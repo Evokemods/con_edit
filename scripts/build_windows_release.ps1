@@ -23,7 +23,7 @@ if ($LASTEXITCODE -ne 0) {
 # Create release directory
 $releaseDir = "release"
 $buildDir = "build\windows\x64\runner\Release"
-$zipName = "ConEdit-Windows-v1.0.0.zip"
+$zipName = "ConEdit-Windows-v1.0.1.zip"
 
 if (Test-Path $releaseDir) {
     Remove-Item -Recurse -Force $releaseDir
