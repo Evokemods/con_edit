@@ -13,6 +13,7 @@ class WidgetHint extends Equatable {
     this.showRichText = false,
     this.showCanvas = false,
     this.canvasType,
+    this.useRustItemsApi = false,
   });
 
   /// Type of widget to use.
@@ -42,6 +43,9 @@ class WidgetHint extends Equatable {
   /// Type of canvas (e.g., "map", "spawn_points", "zones").
   final String? canvasType;
 
+  /// Whether to use Rust items API for autocomplete.
+  final bool useRustItemsApi;
+
   @override
   List<Object?> get props => <Object?>[
         type,
@@ -53,6 +57,7 @@ class WidgetHint extends Equatable {
         showRichText,
         showCanvas,
         canvasType,
+        useRustItemsApi,
       ];
 }
 

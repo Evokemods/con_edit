@@ -99,6 +99,29 @@ class FileDialogService {
       );
     }
   }
+
+  /// Opens a directory picker dialog and returns the selected directory path.
+  Future<FileDialogResult?> pickDirectory({String? dialogTitle}) async {
+    try {
+      final String? result = await FilePicker.platform.getDirectoryPath(
+        dialogTitle: dialogTitle ?? 'Select Config Directory',
+      );
+
+      if (result != null) {
+        return FileDialogResult(
+          success: true,
+          filePath: result,
+        );
+      }
+
+      return null;
+    } catch (e) {
+      return FileDialogResult(
+        success: false,
+        error: 'Failed to open directory picker: $e',
+      );
+    }
+  }
 }
 
 /// Result of a file dialog operation.

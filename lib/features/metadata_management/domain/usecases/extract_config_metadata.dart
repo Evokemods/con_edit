@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:fpdart/fpdart.dart';
 
 import '../../../../core/error/failures.dart';
@@ -40,11 +41,9 @@ class ExtractConfigMetadata {
     List<FieldMetadata> metadata, {
     String? pluginName,
   }) async {
-    final String fieldPath = currentPath.isEmpty
-        ? (node.key ?? 'root')
-        : currentPath.isEmpty
-            ? (node.key ?? '')
-            : '$currentPath.${node.key ?? ''}';
+    // Use node.path.join('.') to match what the widget uses for lookup
+    // This ensures paths are consistent and don't have duplicates
+    final String fieldPath = node.path.join('.');
 
     // Extract metadata from field name
     final FieldMetadata? extracted = _extractFromFieldName(
@@ -59,10 +58,7 @@ class ExtractConfigMetadata {
 
     // Recursively process children
     for (final ConfigNode child in node.children) {
-      final String childPath = child.key == null
-          ? '$fieldPath[${node.children.indexOf(child)}]'
-          : '$fieldPath.${child.key}';
-      await _extractFromNode(child, childPath, metadata, pluginName: pluginName);
+      await _extractFromNode(child, '', metadata, pluginName: pluginName);
     }
   }
 
@@ -85,6 +81,8 @@ class ExtractConfigMetadata {
     String? tooltip;
     List<dynamic>? allowedValues;
     WidgetHint? widgetHint;
+    String? autocompleteSource;
+    String? imagePreviewUrl;
     final List<MetadataConstraint> constraints = <MetadataConstraint>[];
 
     // First, check plugin-specific knowledge base, then generic Rust knowledge
@@ -179,6 +177,56 @@ class ExtractConfigMetadata {
       }
     }
 
+    // Extract Rust item hints (shortname fields)
+    // Check for patterns like: shortname, short_name, short name, item, itemname, item name, etc.
+    final String normalizedFieldName = fieldName.toLowerCase()
+        .replaceAll('_', '')
+        .replaceAll(' ', '')
+        .replaceAll('-', '');
+
+    final bool isItemField = normalizedFieldName == 'shortname' ||
+        normalizedFieldName == 'shortnames' ||
+        normalizedFieldName == 'item' ||
+        normalizedFieldName == 'items' ||
+        normalizedFieldName == 'itemname' ||
+        normalizedFieldName == 'itemnames' ||
+        normalizedFieldName == 'shortnameid' ||
+        normalizedFieldName.contains('itemshort') ||
+        normalizedFieldName.contains('rustitem') ||
+        normalizedFieldName.endsWith('name') && normalizedFieldName.length <= 12;
+
+    // Debug logging
+    if (isItemField) {
+      debugPrint('🔍 AUTOCOMPLETE: Detected item field: "$fieldName" (normalized: "$normalizedFieldName")');
+      debugPrint('   - valueType: ${node.valueType}');
+      debugPrint('   - value: ${node.value}');
+      debugPrint('   - value runtimeType: ${node.value?.runtimeType}');
+    }
+
+    // Check if it's a string type OR if the field name strongly suggests it should be
+    // (sometimes empty fields might not have a detected type yet)
+    final bool shouldUseAutocomplete = isItemField &&
+        (node.valueType == ConfigValueType.string ||
+         node.valueType == ConfigValueType.unknown ||
+         node.value == null ||
+         node.value is String);
+
+    if (shouldUseAutocomplete) {
+      debugPrint('✅ AUTOCOMPLETE: Enabled for "$fieldName"');
+      description ??= 'Rust item shortname';
+      tooltip ??= 'The unique shortname for a Rust item (e.g., "rifle.ak", "wood", "scrap"). '
+          'Type to search from the Rust items database.';
+      widgetHint = const WidgetHint(
+        type: WidgetType.autocomplete,
+        useRustItemsApi: true,
+      );
+
+      // If we have a value, try to add it to the autocomplete source
+      if (node.value is String) {
+        autocompleteSource = 'rust_items';
+      }
+    }
+
     // Extract type hints from field name patterns
     if (fieldName.toLowerCase().contains('color') ||
         fieldName.toLowerCase().contains('colour') ||
@@ -188,7 +236,7 @@ class ExtractConfigMetadata {
         // Check if it's a hex color
         if (node.value is String) {
           final String value = node.value as String;
-          if (value.startsWith('#') || 
+          if (value.startsWith('#') ||
               RegExp(r'^[0-9A-Fa-f]{6}$').hasMatch(value) ||
               RegExp(r'^[0-9A-Fa-f]{3}$').hasMatch(value)) {
             widgetHint = const WidgetHint(type: WidgetType.colorPicker);
@@ -208,7 +256,7 @@ class ExtractConfigMetadata {
       }
     }
 
-    // Extract URL/image hints
+    // Extract URL/image hints with preview support
     if (fieldName.toLowerCase().contains('url') ||
         fieldName.toLowerCase().contains('image') ||
         fieldName.toLowerCase().contains('icon') ||
@@ -221,6 +269,19 @@ class ExtractConfigMetadata {
             pattern: r'^https?://.+',
           ),
         );
+
+        // If we have a value that looks like an image URL, store it for preview
+        if (node.value is String) {
+          final String urlValue = node.value as String;
+          if (urlValue.startsWith('http') &&
+              (urlValue.toLowerCase().endsWith('.png') ||
+               urlValue.toLowerCase().endsWith('.jpg') ||
+               urlValue.toLowerCase().endsWith('.jpeg') ||
+               urlValue.toLowerCase().endsWith('.gif') ||
+               urlValue.toLowerCase().endsWith('.webp'))) {
+            imagePreviewUrl = urlValue;
+          }
+        }
       }
     }
 
@@ -341,6 +402,8 @@ class ExtractConfigMetadata {
       widgetHint: widgetHint,
       allowedValues: allowedValues,
       defaultValue: node.value,
+      autocompleteSource: autocompleteSource,
+      imagePreviewUrl: imagePreviewUrl,
       confidence: 0.8, // High confidence for extracted metadata
       isReadOnly: isReadOnly,
     );

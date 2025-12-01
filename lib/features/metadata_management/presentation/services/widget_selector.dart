@@ -9,6 +9,7 @@ import '../../../config_editor/presentation/widgets/base_widgets/dropdown_widget
 import '../../../config_editor/presentation/widgets/base_widgets/multiline_text_widget.dart';
 import '../../../config_editor/presentation/widgets/base_widgets/numeric_input_widget.dart';
 import '../../../config_editor/presentation/widgets/base_widgets/object_widget.dart';
+import '../../../config_editor/presentation/widgets/base_widgets/rust_item_autocomplete_widget.dart';
 import '../../../config_editor/presentation/widgets/base_widgets/string_input_widget.dart';
 import '../../domain/entities/field_metadata.dart';
 import '../../domain/entities/widget_hint.dart';
@@ -31,8 +32,18 @@ class WidgetSelector {
 
     Widget widget;
 
+    // Debug logging
+    if (node.key != null && node.key!.toLowerCase().contains('short')) {
+      debugPrint('🔧 WIDGET SELECTOR: ${node.key}');
+      debugPrint('   - metadata: ${metadata != null ? "exists" : "null"}');
+      debugPrint('   - widgetHint: ${metadata?.widgetHint}');
+      debugPrint('   - widgetHint.type: ${metadata?.widgetHint?.type}');
+      debugPrint('   - useRustItemsApi: ${metadata?.widgetHint?.useRustItemsApi}');
+    }
+
     // If metadata has widget hint, use that
     if (metadata?.widgetHint != null) {
+      debugPrint('   - Using hint-based widget');
       widget = _buildFromHint(
         node: node,
         hint: metadata!.widgetHint!,
@@ -41,6 +52,7 @@ class WidgetSelector {
         onChanged: onChanged,
       );
     } else {
+      debugPrint('   - Using type-based widget');
       // Otherwise, fall back to type-based selection
       widget = _buildFromType(
         node: node,
@@ -133,6 +145,24 @@ class WidgetSelector {
         );
 
       case WidgetType.autocomplete:
+        debugPrint('   - In autocomplete case');
+        debugPrint('   - useRustItemsApi: ${hint.useRustItemsApi}');
+        debugPrint('   - node.valueType: ${node.valueType}');
+        // Check if this is a Rust items autocomplete
+        if (hint.useRustItemsApi && node.valueType == ConfigValueType.string) {
+          debugPrint('   - ✅ Returning RustItemAutocompleteWidget');
+          return RustItemAutocompleteWidget(
+            node: node,
+            onChanged: (String value) => onChanged(node.copyWith(value: value)),
+          );
+        }
+        // Fall back to regular string input for other autocomplete types
+        debugPrint('   - ⚠️ Falling back to StringInputWidget');
+        return StringInputWidget(
+          node: node,
+          onChanged: (String value) => onChanged(node.copyWith(value: value)),
+        );
+
       case WidgetType.tableEditor:
       case WidgetType.canvas:
       case WidgetType.vector3:

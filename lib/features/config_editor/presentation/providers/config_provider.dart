@@ -31,6 +31,7 @@ class ConfigEditorState {
     this.isLoading = false,
     this.error,
     this.completedPages = const <int>{},
+    this.hasUnsavedChanges = false,
   });
 
   /// The root node of the config tree.
@@ -56,6 +57,9 @@ class ConfigEditorState {
 
   /// Set of page indices that have been completed/confirmed.
   final Set<int> completedPages;
+
+  /// Whether there are unsaved changes.
+  final bool hasUnsavedChanges;
 
   /// Gets the current page if available.
   ConfigPage? get currentPage {
@@ -91,6 +95,7 @@ class ConfigEditorState {
     bool? isLoading,
     String? error,
     Set<int>? completedPages,
+    bool? hasUnsavedChanges,
   }) {
     return ConfigEditorState(
       rootNode: rootNode ?? this.rootNode,
@@ -101,6 +106,7 @@ class ConfigEditorState {
       isLoading: isLoading ?? this.isLoading,
       error: error ?? this.error,
       completedPages: completedPages ?? this.completedPages,
+      hasUnsavedChanges: hasUnsavedChanges ?? this.hasUnsavedChanges,
     );
   }
 }
@@ -141,6 +147,7 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
           currentFilePath: filePath,
           isLoading: false,
           completedPages: const <int>{}, // Reset completed pages when loading new file
+          hasUnsavedChanges: false, // Reset unsaved changes when loading new file
         );
       },
     );
@@ -173,7 +180,7 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
 
     // Regenerate pages from the updated root node to ensure pages reference the latest nodes
     final List<ConfigPage> newPages = ConfigPage.fromRootNode(newRoot);
-    
+
     // Try to preserve current page by name, fallback to index
     int newPageIndex = 0;
     if (state.pages.isNotEmpty && state.currentPageIndex < state.pages.length) {
@@ -197,7 +204,13 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
       rootNode: newRoot,
       pages: newPages,
       currentPageIndex: newPageIndex,
+      hasUnsavedChanges: true, // Mark as having unsaved changes
     );
+  }
+
+  /// Marks the current state as saved.
+  void markAsSaved() {
+    state = state.copyWith(hasUnsavedChanges: false);
   }
 
   /// Recursively updates a node in the tree.

@@ -57,7 +57,19 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
     );
     final FileDialogService fileDialog = ref.read(fileDialogProvider);
 
-    return Shortcuts(
+    return PopScope(
+      canPop: !state.hasUnsavedChanges,
+      onPopInvokedWithResult: (bool didPop, dynamic result) async {
+        if (didPop) return;
+
+        if (state.hasUnsavedChanges) {
+          final bool? shouldPop = await _showUnsavedChangesDialog(context);
+          if (shouldPop == true && context.mounted) {
+            Navigator.of(context).pop();
+          }
+        }
+      },
+      child: Shortcuts(
       shortcuts: _shortcuts,
       child: Actions(
         actions: <Type, Action<Intent>>{
@@ -131,6 +143,57 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
                         : _buildEditorView(state),
           ),
         ),
+      ),
+    ),
+    );
+  }
+
+  /// Shows dialog for unsaved changes confirmation.
+  Future<bool?> _showUnsavedChangesDialog(BuildContext context) {
+    return showDialog<bool>(
+      context: context,
+      builder: (BuildContext dialogContext) => AlertDialog(
+        title: const Row(
+          children: <Widget>[
+            Icon(
+              Icons.warning_amber_rounded,
+              color: DesignTokens.warningColor,
+              size: 28,
+            ),
+            SizedBox(width: DesignTokens.space200),
+            Text('Unsaved Changes'),
+          ],
+        ),
+        content: const Text(
+          'You have unsaved changes that will be lost. Do you want to save before leaving?',
+        ),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(true),
+            child: const Text(
+              'Discard',
+              style: TextStyle(color: DesignTokens.errorColor),
+            ),
+          ),
+          TextButton(
+            onPressed: () => Navigator.of(dialogContext).pop(false),
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton.icon(
+            onPressed: () async {
+              await _handleSave();
+              if (dialogContext.mounted) {
+                Navigator.of(dialogContext).pop(true);
+              }
+            },
+            icon: const Icon(Icons.save),
+            label: const Text('Save & Exit'),
+            style: ElevatedButton.styleFrom(
+              backgroundColor: DesignTokens.primaryColor,
+              foregroundColor: Colors.white,
+            ),
+          ),
+        ],
       ),
     );
   }
@@ -572,6 +635,8 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
         jsonString,
       );
       if (result != null && result.success) {
+        // Mark as saved after successful save
+        ref.read(configEditorProvider.notifier).markAsSaved();
         if (mounted) {
           ScaffoldMessenger.of(context).showSnackBar(
             const SnackBar(content: Text('File saved successfully')),
@@ -624,6 +689,29 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
   }
 
   Future<void> _handleAnalyzeConfigs() async {
+    // Ask user to select config directory first
+    final FileDialogService fileDialog = ref.read(fileDialogProvider);
+    final FileDialogResult? directoryResult = await fileDialog.pickDirectory(
+      dialogTitle: 'Select Config Directory to Analyze',
+    );
+
+    if (directoryResult == null || !directoryResult.success) {
+      if (directoryResult?.error != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(directoryResult!.error!),
+            backgroundColor: Theme.of(context).colorScheme.error,
+          ),
+        );
+      }
+      return; // User cancelled or error occurred
+    }
+
+    final String? configDirectory = directoryResult.filePath;
+    if (configDirectory == null) {
+      return; // No directory selected
+    }
+
     final AnalyzeConfigs analyzeConfigs = ref.read(analyzeConfigsProvider);
     final PatternRepositoryImpl patternRepository =
         ref.read(patternRepositoryProvider);
@@ -656,9 +744,9 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
       },
     );
 
-    // Run analysis
+    // Run analysis on selected directory
     final Either<Failure, int> result =
-        await analyzeConfigs.analyzeDirectory('config');
+        await analyzeConfigs.analyzeDirectory(configDirectory);
 
     if (!mounted) return;
     Navigator.of(context).pop(); // Close progress dialog
@@ -687,6 +775,29 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
   }
 
   Future<void> _handleTrainConfigs() async {
+    // Ask user to select config directory first
+    final FileDialogService fileDialog = ref.read(fileDialogProvider);
+    final FileDialogResult? directoryResult = await fileDialog.pickDirectory(
+      dialogTitle: 'Select Config Directory to Train On',
+    );
+
+    if (directoryResult == null || !directoryResult.success) {
+      if (directoryResult?.error != null && mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(directoryResult!.error!),
+            backgroundColor: Theme.of(context).colorScheme.error,
+          ),
+        );
+      }
+      return; // User cancelled or error occurred
+    }
+
+    final String? configDirectory = directoryResult.filePath;
+    if (configDirectory == null) {
+      return; // No directory selected
+    }
+
     // Show progress dialog
     if (!mounted) return;
 
@@ -722,9 +833,9 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
         metadataRepository: metadataRepository,
       );
 
-      // Run training
+      // Run training on selected directory
       final Either<Failure, TrainingResult> result =
-          await trainingSystem.trainOnDirectory('config');
+          await trainingSystem.trainOnDirectory(configDirectory);
 
       await database.close();
 

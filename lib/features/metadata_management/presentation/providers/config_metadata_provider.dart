@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:fpdart/fpdart.dart';
 
@@ -67,6 +68,9 @@ final ProviderFamily<FieldMetadata?, String> fieldMetadataProvider =
 
     // Skip metadata lookup if no file is loaded
     if (configFilePath == null || configFilePath.isEmpty) {
+      if (fieldPath.toLowerCase().contains('short')) {
+        debugPrint('🔍 PROVIDER: No file loaded, skipping lookup for "$fieldPath"');
+      }
       return null;
     }
 
@@ -75,10 +79,25 @@ final ProviderFamily<FieldMetadata?, String> fieldMetadataProvider =
       configMetadataCacheProvider(configFilePath),
     );
 
+    // Debug logging for shortname fields
+    if (fieldPath.toLowerCase().contains('short')) {
+      debugPrint('🔍 PROVIDER: Looking up "$fieldPath"');
+      debugPrint('   - cache has ${cache.length} entries');
+      debugPrint('   - cache keys: ${cache.keys.take(5).join(", ")}...');
+      debugPrint('   - exact match: ${cache.containsKey(fieldPath)}');
+    }
+
     // Look up metadata for this field path
     final List<FieldMetadata>? metadataList = cache[fieldPath];
     if (metadataList == null || metadataList.isEmpty) {
+      if (fieldPath.toLowerCase().contains('short')) {
+        debugPrint('   - ❌ NOT FOUND in cache');
+      }
       return null;
+    }
+
+    if (fieldPath.toLowerCase().contains('short')) {
+      debugPrint('   - ✅ FOUND ${metadataList.length} metadata entries');
     }
 
     // Return the metadata with highest confidence
@@ -140,7 +159,14 @@ class ConfigMetadataCacheNotifier
             cache[path] = <FieldMetadata>[];
           }
           cache[path]!.add(meta);
+          // Debug logging for shortname fields
+          if (path.toLowerCase().contains('short')) {
+            debugPrint('💾 CACHE: Storing metadata for "$path"');
+            debugPrint('   - widgetHint: ${meta.widgetHint?.type}');
+            debugPrint('   - useRustItemsApi: ${meta.widgetHint?.useRustItemsApi}');
+          }
         }
+        debugPrint('💾 CACHE: Stored ${cache.length} field paths');
         state = cache;
       },
     );

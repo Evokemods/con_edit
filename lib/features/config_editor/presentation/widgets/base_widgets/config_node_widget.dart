@@ -36,6 +36,13 @@ class ConfigNodeWidget extends ConsumerWidget {
       fieldMetadataProvider(fieldPath),
     );
 
+    // Debug logging for shortname fields
+    if (node.key != null && node.key!.toLowerCase().contains('short')) {
+      debugPrint('📍 CONFIG NODE WIDGET: ${node.key}');
+      debugPrint('   - fieldPath: "$fieldPath"');
+      debugPrint('   - metadata: ${metadata != null ? "exists" : "NULL"}');
+    }
+
     return WidgetSelector.selectWidget(
       node: node,
       onChanged: onNodeChanged,
