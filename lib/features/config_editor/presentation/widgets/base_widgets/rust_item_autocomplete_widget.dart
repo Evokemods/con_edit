@@ -48,6 +48,7 @@ class _RustItemAutocompleteWidgetState
   bool _isLoading = false;
   int _selectedIndex = -1;
   Timer? _debounceTimer;
+  bool _isProgrammaticUpdate = false;
 
   @override
   void initState() {
@@ -71,9 +72,16 @@ class _RustItemAutocompleteWidgetState
   @override
   void didUpdateWidget(RustItemAutocompleteWidget oldWidget) {
     super.didUpdateWidget(oldWidget);
-    // Only update controller if not currently focused (user isn't typing)
-    if (!_focusNode.hasFocus && oldWidget.node.value != widget.node.value) {
-      _controller.text = widget.node.value?.toString() ?? '';
+    // Update controller if value changed, except when:
+    // 1. User is actively typing (has focus AND not a programmatic update)
+    // 2. The value hasn't actually changed
+    if (oldWidget.node.value != widget.node.value) {
+      final bool shouldUpdate = !_focusNode.hasFocus || _isProgrammaticUpdate;
+
+      if (shouldUpdate) {
+        _controller.text = widget.node.value?.toString() ?? '';
+        _isProgrammaticUpdate = false; // Reset flag after update
+      }
     }
   }
 
@@ -82,8 +90,9 @@ class _RustItemAutocompleteWidgetState
       _searchItems(_controller.text);
     } else {
       _removeOverlay();
-      // Save value when focus is lost
-      if (_controller.text != widget.node.value?.toString()) {
+      // Save value when focus is lost, but NOT if this is from a programmatic selection
+      // (the selection already called widget.onChanged with the correct value)
+      if (!_isProgrammaticUpdate && _controller.text != widget.node.value?.toString()) {
         widget.onChanged(_controller.text);
       }
     }
@@ -143,22 +152,44 @@ class _RustItemAutocompleteWidgetState
     _removeOverlay();
 
     _overlayEntry = OverlayEntry(
-      builder: (BuildContext context) => Positioned(
-        width: _getTextFieldWidth(),
-        child: CompositedTransformFollower(
-          link: _layerLink,
-          showWhenUnlinked: false,
-          offset: Offset(0, _getTextFieldHeight() + 4),
-          child: Material(
-            elevation: 8,
-            borderRadius: BorderRadius.circular(DesignTokens.radiusMedium),
-            color: DesignTokens.surfaceColor,
-            child: ConstrainedBox(
-              constraints: const BoxConstraints(maxHeight: 300),
-              child: _buildSuggestionsList(),
+      builder: (BuildContext context) => Stack(
+        children: <Widget>[
+          // Invisible barrier to detect taps outside
+          Positioned.fill(
+            child: Listener(
+              behavior: HitTestBehavior.translucent,
+              onPointerDown: (_) {
+                // Close overlay when tapping outside
+                _removeOverlay();
+                _focusNode.unfocus();
+              },
             ),
           ),
-        ),
+          // The suggestions list - positioned above the backdrop
+          Positioned(
+            width: _getTextFieldWidth(),
+            child: CompositedTransformFollower(
+              link: _layerLink,
+              showWhenUnlinked: false,
+              offset: Offset(0, _getTextFieldHeight() + 4),
+              child: Listener(
+                // Absorb pointer events to prevent them from reaching the backdrop
+                onPointerDown: (_) {
+                  // Absorb the event silently
+                },
+                child: Material(
+                  elevation: 8,
+                  borderRadius: BorderRadius.circular(DesignTokens.radiusMedium),
+                  color: DesignTokens.surfaceColor,
+                  child: ConstrainedBox(
+                    constraints: const BoxConstraints(maxHeight: 300),
+                    child: _buildSuggestionsList(),
+                  ),
+                ),
+              ),
+            ),
+          ),
+        ],
       ),
     );
 
@@ -184,70 +215,72 @@ class _RustItemAutocompleteWidgetState
           final RustItem item = _suggestions[index];
           final bool isSelected = index == _selectedIndex;
 
-          return Material(
-            color: isSelected
-                ? DesignTokens.primaryColor.withValues(alpha: 0.1)
-                : Colors.transparent,
-            child: InkWell(
-              onTap: () => _selectItem(item),
-              child: Padding(
-                padding: const EdgeInsets.symmetric(
-                  horizontal: DesignTokens.space200,
-                  vertical: DesignTokens.space150,
-                ),
-                child: Row(
-                  children: <Widget>[
-                    // Item icon (if available)
-                    if (item.imageUrl != null) ...<Widget>[
-                      _buildItemIcon(item.imageUrl!),
-                      const SizedBox(width: DesignTokens.space150),
-                    ],
-
-                    // Category badge
-                    _buildCategoryBadge(item.category),
-                    const SizedBox(width: DesignTokens.space150),
-
-                    // Item info
-                    Expanded(
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: <Widget>[
-                          // Display name
-                          Text(
-                            item.displayName,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodyMedium
-                                ?.copyWith(
-                                  fontWeight: FontWeight.w600,
-                                ),
-                          ),
-                          const SizedBox(height: DesignTokens.space50),
-                          // Shortname
-                          Text(
-                            item.shortname,
-                            style: Theme.of(context)
-                                .textTheme
-                                .bodySmall
-                                ?.copyWith(
-                                  color: DesignTokens.onSurfaceVariantColor,
-                                  fontFamily: 'Courier',
-                                ),
-                          ),
-                        ],
-                      ),
-                    ),
-
-                    // Selection indicator
-                    if (isSelected)
-                      const Icon(
-                        Icons.keyboard_return,
-                        size: 16,
-                        color: DesignTokens.primaryColor,
-                      ),
-                  ],
-                ),
+          return MouseRegion(
+            cursor: SystemMouseCursors.click,
+            child: GestureDetector(
+              onTapDown: (_) => _selectItem(item),
+              behavior: HitTestBehavior.opaque,
+            child: Container(
+              color: isSelected
+                  ? DesignTokens.primaryColor.withValues(alpha: 0.1)
+                  : Colors.transparent,
+              padding: const EdgeInsets.symmetric(
+                horizontal: DesignTokens.space200,
+                vertical: DesignTokens.space150,
               ),
+              child: Row(
+                children: <Widget>[
+                  // Item icon (if available)
+                  if (item.imageUrl != null) ...<Widget>[
+                    _buildItemIcon(item.imageUrl!),
+                    const SizedBox(width: DesignTokens.space150),
+                  ],
+
+                  // Category badge
+                  _buildCategoryBadge(item.category),
+                  const SizedBox(width: DesignTokens.space150),
+
+                  // Item info
+                  Expanded(
+                    child: Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        // Display name
+                        Text(
+                          item.displayName,
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodyMedium
+                              ?.copyWith(
+                                fontWeight: FontWeight.w600,
+                              ),
+                        ),
+                        const SizedBox(height: DesignTokens.space50),
+                        // Shortname
+                        Text(
+                          item.shortname,
+                          style: Theme.of(context)
+                              .textTheme
+                              .bodySmall
+                              ?.copyWith(
+                                color: DesignTokens.onSurfaceVariantColor,
+                                fontFamily: 'Courier',
+                              ),
+                        ),
+                      ],
+                    ),
+                  ),
+
+                  // Selection indicator
+                  if (isSelected)
+                    const Icon(
+                      Icons.keyboard_return,
+                      size: 16,
+                      color: DesignTokens.primaryColor,
+                    ),
+                ],
+              ),
+            ),
             ),
           );
         },
@@ -381,10 +414,32 @@ class _RustItemAutocompleteWidgetState
   }
 
   void _selectItem(RustItem item) {
-    _controller.text = item.shortname;
-    widget.onChanged(item.shortname);
+    // Remove overlay first to prevent it from interfering
     _removeOverlay();
+
+    // Set flag to indicate this is a programmatic update
+    // This prevents _onFocusChange from overwriting our selection
+    setState(() {
+      _isProgrammaticUpdate = true;
+    });
+
+    // Set the controller text
+    _controller.text = item.shortname;
+
+    // Notify parent of the change (this triggers rebuild with new node value)
+    widget.onChanged(item.shortname);
+
+    // Unfocus to commit the value (this will trigger _onFocusChange, but the flag will prevent overwriting)
     _focusNode.unfocus();
+
+    // Reset the flag after unfocus completes (schedule for next frame)
+    WidgetsBinding.instance.addPostFrameCallback((_) {
+      if (mounted) {
+        setState(() {
+          _isProgrammaticUpdate = false;
+        });
+      }
+    });
   }
 
   void _handleKeyPress(KeyEvent event) {

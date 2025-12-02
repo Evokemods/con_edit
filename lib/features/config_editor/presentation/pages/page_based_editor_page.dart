@@ -14,6 +14,7 @@ import '../../../file_management/data/repositories/file_repository_impl.dart';
 import '../../../file_management/presentation/providers/file_dialog_provider.dart';
 import '../../../metadata_management/data/datasources/metadata_dao.dart';
 import '../../../metadata_management/data/repositories/metadata_repository_impl.dart';
+import '../../../metadata_management/domain/entities/field_metadata.dart';
 import '../../../metadata_management/domain/usecases/config_training_system.dart';
 import '../../../metadata_management/domain/usecases/extract_config_metadata.dart';
 import '../../../metadata_management/presentation/providers/config_metadata_provider.dart';
@@ -27,6 +28,7 @@ import '../providers/command_history_provider.dart';
 import '../providers/config_provider.dart';
 import '../providers/search_provider.dart';
 import '../widgets/base_widgets/config_node_widget.dart';
+import '../widgets/metadata_provider_widget.dart';
 import '../widgets/search_dialog.dart';
 
 /// Page-based config editor with sidebar navigation.
@@ -249,21 +251,7 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
 
                       // Page Content
                       if (currentPage != null)
-                        ...currentPage.nodes.map(
-                          (ConfigNode node) => Padding(
-                            padding: const EdgeInsets.only(
-                              bottom: DesignTokens.space300,
-                            ),
-                            child: ConfigNodeWidget(
-                              node: node,
-                              onNodeChanged: (ConfigNode updatedNode) {
-                                ref
-                                    .read(configEditorProvider.notifier)
-                                    .updateNode(updatedNode);
-                              },
-                            ),
-                          ),
-                        ),
+                        _buildPageContent(currentPage, state),
                     ],
                   ),
                 ),
@@ -451,6 +439,80 @@ class _PageBasedEditorPageState extends ConsumerState<PageBasedEditorPage> {
             ),
           ),
         ],
+      ),
+    );
+  }
+
+  /// Builds page content with pre-computed metadata for performance.
+  ///
+  /// Pre-computes metadata lookup for all nodes on the page to avoid
+  /// N+1 provider watches (one watch per widget). This improves performance
+  /// significantly for pages with many fields.
+  Widget _buildPageContent(ConfigPage currentPage, ConfigEditorState state) {
+    // Pre-compute metadata for all nodes on this page
+    final Map<String, FieldMetadata> metadataMap = <String, FieldMetadata>{};
+
+    if (state.currentFilePath != null && state.currentFilePath!.isNotEmpty) {
+      // Get the metadata cache for the current file
+      final Map<String, List<FieldMetadata>> cache = ref.watch(
+        configMetadataCacheProvider(state.currentFilePath!),
+      );
+
+      // Build metadata map for all nodes on this page
+      void collectMetadata(ConfigNode node) {
+        final String fieldPath = node.path.join('.');
+        final List<FieldMetadata>? metadataList = cache[fieldPath];
+
+        if (metadataList != null && metadataList.isNotEmpty) {
+          // Store the highest confidence metadata
+          metadataList.sort((FieldMetadata a, FieldMetadata b) =>
+              b.confidence.compareTo(a.confidence));
+          metadataMap[fieldPath] = metadataList.first;
+        }
+
+        // Recursively collect for children
+        for (final ConfigNode child in node.children) {
+          collectMetadata(child);
+        }
+      }
+
+      // Collect metadata for all nodes
+      for (final ConfigNode node in currentPage.nodes) {
+        collectMetadata(node);
+      }
+
+      // Debug logging
+      debugPrint('📦 PAGE METADATA: Collected ${metadataMap.length} metadata entries');
+      if (metadataMap.keys.any((String k) => k.toLowerCase().contains('short'))) {
+        debugPrint('   - Shortname fields found:');
+        metadataMap.keys.where((String k) => k.toLowerCase().contains('short')).forEach((String k) {
+          debugPrint('     • $k');
+        });
+      }
+    }
+
+    // Build widgets with pre-computed metadata
+    // Wrap in MetadataProvider so nested widgets can access metadata
+    return MetadataProvider(
+      metadataMap: metadataMap,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: currentPage.nodes.map(
+          (ConfigNode node) => Padding(
+            padding: const EdgeInsets.only(
+              bottom: DesignTokens.space300,
+            ),
+            child: ConfigNodeWidget(
+              node: node,
+              metadata: metadataMap[node.path.join('.')],
+              onNodeChanged: (ConfigNode updatedNode) {
+                ref
+                    .read(configEditorProvider.notifier)
+                    .updateNode(updatedNode);
+              },
+            ),
+          ),
+        ).toList(),
       ),
     );
   }

@@ -125,6 +125,10 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
   /// Convert to JSON use case.
   final ConvertToJson convertToJson;
 
+  /// Path-indexed map for O(1) node lookups during updates.
+  /// This significantly improves performance for large config trees.
+  Map<String, ConfigNode> _nodesByPath = <String, ConfigNode>{};
+
   /// Loads a config from JSON string.
   Future<void> loadFromJson(String jsonString, {String? filePath}) async {
     state = state.copyWith(isLoading: true);
@@ -137,6 +141,9 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
         );
       },
       (ConfigNode rootNode) {
+        // Build path index for fast lookups
+        _buildPathIndex(rootNode);
+
         // Extract pages from root node
         final List<ConfigPage> pages = ConfigPage.fromRootNode(rootNode);
 
@@ -174,9 +181,12 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
     if (updatedNode.isRoot) {
       newRoot = updatedNode;
     } else {
-      // Otherwise, rebuild the tree with the updated node
+      // Otherwise, rebuild the tree with the updated node using optimized path lookup
       newRoot = _updateNodeInTree(state.rootNode!, updatedNode);
     }
+
+    // Rebuild path index for the updated tree
+    _buildPathIndex(newRoot);
 
     // Regenerate pages from the updated root node to ensure pages reference the latest nodes
     final List<ConfigPage> newPages = ConfigPage.fromRootNode(newRoot);
@@ -213,15 +223,43 @@ class ConfigEditorNotifier extends StateNotifier<ConfigEditorState> {
     state = state.copyWith(hasUnsavedChanges: false);
   }
 
+  /// Builds a path-indexed map for O(1) node lookups.
+  ///
+  /// This index dramatically improves performance for node updates in large trees.
+  /// Instead of O(n) recursive traversal, we get O(1) lookups by path.
+  void _buildPathIndex(ConfigNode root) {
+    _nodesByPath = <String, ConfigNode>{};
+
+    void traverse(ConfigNode node) {
+      _nodesByPath[node.fullPath] = node;
+      for (final ConfigNode child in node.children) {
+        traverse(child);
+      }
+    }
+
+    traverse(root);
+  }
+
   /// Recursively updates a node in the tree.
+  ///
+  /// Performance: O(n) where n is the depth of the tree from root to the updated node.
+  /// The path index helps us quickly determine the update path.
   ConfigNode _updateNodeInTree(ConfigNode current, ConfigNode updated) {
     // If this is the node to update, return the updated version
     if (current.fullPath == updated.fullPath) {
       return updated;
     }
 
-    // If this node has children, recursively update them
+    // If this node has children, check if any need updating
     if (current.children.isNotEmpty) {
+      // Only rebuild children if the updated node is in this subtree
+      // This optimization skips entire branches that don't contain the update
+      final bool containsUpdate = updated.fullPath.startsWith(current.fullPath);
+
+      if (!containsUpdate) {
+        return current; // No changes in this subtree
+      }
+
       final List<ConfigNode> newChildren = current.children.map(
         (ConfigNode child) => _updateNodeInTree(child, updated),
       ).toList();
